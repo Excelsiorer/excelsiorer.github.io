@@ -12213,7 +12213,11 @@ textarea:focus {
   width: 100%
 }
 .banner-top {
-  display: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex
+}
+.banner-top .banner-top-link {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
@@ -12227,11 +12231,6 @@ textarea:focus {
   font-size: 12px;
   background: #fceded;
   margin-bottom: 30px
-}
-.banner-top.showed {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex
 }
 .banner-top .banner-top-img {
   height: 100%;
@@ -12252,7 +12251,8 @@ textarea:focus {
   cursor: pointer;
   -webkit-transition: .2s ease-in-out;
   -o-transition: .2s ease-in-out;
-  transition: .2s ease-in-out
+  transition: .2s ease-in-out;
+  z-index: 5
 }
 .banner-top .icon-close:hover {
   color: #000
@@ -12310,7 +12310,7 @@ textarea:focus {
   background: #0e5c83;
   border-radius: 5px
 }
-.header__bar form {
+.header__bar form:not(.subform) {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -12329,24 +12329,24 @@ textarea:focus {
   padding-right: 15px;
   background: #fff
 }
-.header__bar form input {
+.header__bar form:not(.subform) input {
   font-size: 14px;
   width: 100%;
   border: none
 }
-.header__bar form input:placeholder {
+.header__bar form:not(.subform) input:placeholder {
   color: #d9d7d7
 }
-.header__bar form button {
+.header__bar form:not(.subform) button {
   background: 0 0;
   border: none;
   padding: 0
 }
-.header__bar form button:active,
-.header__bar form button:focus {
+.header__bar form:not(.subform) button:active,
+.header__bar form:not(.subform) button:focus {
   outline: 0
 }
-.header__bar form .icon {
+.header__bar form:not(.subform) .icon {
   color: #54a2c8
 }
 .header__bar .extended-search {
@@ -13469,6 +13469,9 @@ main .main-banner img {
 .breadcrumb .breadcrumb-item a {
   color: #004666
 }
+.breadcrumb-list {
+  margin: 15px 0 30px 0
+}
 .customCheck-list {
   margin-top: 25px;
   padding-left: 0;
@@ -14260,11 +14263,16 @@ main .main-banner img {
   flex-basis: 33%;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
-  justify-content: center
+  justify-content: center;
+  padding: 0 15px
 }
-.steps .step:disabled {
+.steps .step.step-disabled {
   color: #91bed4;
-  cursor: no-drop
+  cursor: no-drop;
+  pointer-events: none
+}
+.steps .step.step-disabled:hover {
+  text-decoration: none
 }
 .steps .step .left {
   font-size: 40px;

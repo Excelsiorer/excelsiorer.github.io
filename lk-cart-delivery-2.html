@@ -20,9 +20,10 @@
     <div class="row">
       <div class="col-12">
         <div class="banner-top">
-          <img src="" alt="" class="banner-top-img">
+          <a href="#" class="banner-top-link">
+            <img src="" alt="" class="banner-top-img">
+          </a>
           <i class="icon icon-close"></i>
-          <span class="banner-top-text">Рекламный баннер</span>
         </div>
       </div>
     </div>
@@ -166,8 +167,8 @@
                 <span>Войти <div class="d-none | d-lg-inline-block">\ Регистрация</div></span>
               </li>
             </ul>
-
-            <div class="subform">
+            
+            <form class="subform">
               <label>
                   <span>Введите e-mail или логин</span>
                   <input type="text" name="login-name" id="login-name" class="input">
@@ -198,7 +199,7 @@
                   </a>
                 </li>
               </ul>
-            </div>
+            </form>
           
           </div>
         </div>
@@ -466,7 +467,7 @@
               </a>
             </li>
 
-            <li class="nav-item">
+            <li class="nav-item" onclick="window.location.href='logout.html'">
               <a 
                 class="nav-link" 
                 id="exit-tab" 
@@ -1479,7 +1480,7 @@
                 <div class="order-footer">
 
                   <div class="order-text-dark | order-text-big | order-text-bold | order-block | col-6 | d-none | d-lg-flex">
-                    ВЫБРАНО ТОВАРОВ: <span class="order-text-check-number">4</span>
+                    ВЫБРАНО ТОВАРОВ: <span class="order-text-check-number">0</span>
                   </div>
 
                   <div class="order-text | order-block | order-block-flex | col-12 | col-lg-6">
@@ -1655,7 +1656,7 @@
                       <div class="form-side | col-12 | col-lg-6">
 
                         <div class="order-text-dark | d-lg-block | order-text-big | d-none | order-text-bold | order-block ">
-                          ВЫБРАНО ТОВАРОВ: <span class="order-text-check-number">4</span>
+                          ВЫБРАНО ТОВАРОВ: <span class="order-text-check-number">0</span>
                         </div>
 
                       </div>
@@ -1965,7 +1966,7 @@
       </div>
       <ul class="params params-rare">
         <li>
-          <i class="icon icon-double-mark"></i>
+          <i class="icon stamp-type type-1"></i>
         </li>
       </ul>
       <ul class="params params-main">
