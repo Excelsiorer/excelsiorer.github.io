@@ -12382,7 +12382,13 @@ textarea:focus {
   cursor: pointer
 }
 .header__bar .user li a {
-  color: #fff
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end
 }
 .header__bar .user li a:hover {
   color: #fff;
@@ -12403,9 +12409,9 @@ textarea:focus {
   margin-right: 10px
 }
 .header__bar .user li i.icon-cart .notification {
-  top: -10px;
+  top: -5px;
   right: -8px;
-  font-size: 14px;
+  font-size: 16px;
   font-style: normal
 }
 .header__bar .user li span {
@@ -12542,6 +12548,11 @@ textarea:focus {
   cursor: pointer;
   z-index: 1
 }
+.header .currency .currency-list.active li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex
+}
 .header .currency .currency-list li {
   display: none;
   -webkit-box-pack: center;
@@ -12549,6 +12560,14 @@ textarea:focus {
   justify-content: center;
   margin-right: 0;
   margin-bottom: 10px
+}
+.header .currency .currency-list li.active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex
+}
+.header .currency .currency-list li a {
+  margin: 0
 }
 .header .currency .currency-list li i {
   min-width: 30px;
@@ -13268,6 +13287,13 @@ main .main-banner img {
 .products.horizon .product .price .price-params-container .add-to-favorite:hover {
   background: rgba(14,92,131,.8)
 }
+#favorite-tab-content .price-wrapper {
+  position: relative
+}
+#favorite-tab-content .delete-from-cart {
+  display: block!important;
+  margin-left: 20px
+}
 .search {
   border: 1px solid #4b839e;
   border-radius: 5px;
@@ -13730,7 +13756,9 @@ main .main-banner img {
   margin-top: 10px
 }
 .modal-dialog .product .price .price-wrapper {
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   margin-top: 0;
   margin-bottom: 0
 }
@@ -15032,14 +15060,29 @@ main .main-banner img {
   padding: 0;
   margin-left: 8px;
   background-color: transparent;
-  border: none
+  border: none;
+  opacity: .8
+}
+.show-type.active {
+  opacity: 1
 }
 .show-types span {
   margin-right: 15px
 }
 .filter {
   width: 100%;
-  height: 100%
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center
+}
+.filter.sort-desc .filter-img {
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg)
 }
 .filter .filter-control {
   display: none
@@ -15050,6 +15093,10 @@ main .main-banner img {
   transform: rotate(180deg)
 }
 .filter .filter-label {
+  margin: 0;
+  width: 100%
+}
+.filter .filter-label a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -15068,12 +15115,15 @@ main .main-banner img {
   -ms-flex-pack: center;
   justify-content: center
 }
+.filter .filter-label a:hover {
+  text-decoration: none
+}
 .filter-price {
   background-color: #f5f6f6;
   border-radius: 5px;
   padding: 0
 }
-.filter-price .filter-label {
+.filter-price .filter-label a {
   color: #004666;
   padding-top: 8px;
   padding-bottom: 8px
@@ -15984,10 +16034,20 @@ footer {
     font-size: 16px
   }
   .order.product .right .price-wrapper {
-    -webkit-box-align: end;
-    -ms-flex-align: end;
-    align-items: flex-end;
-    text-align: right
+    height: 100%;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center
   }
   .order.product .price {
     margin: 0;
@@ -16007,6 +16067,7 @@ footer {
     margin-left: 3px
   }
   .order.product .price .old {
+    display: none;
     color: #fff;
     margin: 0
   }
@@ -16020,7 +16081,14 @@ footer {
     font-weight: 500
   }
   .order.product .price .delete-from-cart {
-    display: none
+    top: 10px
+  }
+  #favorite-tab-content .delete-from-cart {
+    position: absolute;
+    top: 0
+  }
+  #favorite-tab-content .price .price-wrapper .old {
+    margin-right: auto
   }
   .steps {
     -ms-flex-wrap: wrap;

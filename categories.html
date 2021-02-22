@@ -213,17 +213,25 @@
 
           <div class="wrapper">
             <ul class="currency-list">
-              <li data-currency="rub">
-                <i class="icon icon-ruble"></i>
+              <li data-currency="rub" class="active">
+                <a href="#">
+                  <i class="icon icon-ruble"></i>
+                </a>
               </li>
               <li data-currency="uah">
-                <i class="icon icon-uah"></i>
+                <a href="#">
+                  <i class="icon icon-uah"></i>
+                </a>
               </li>
               <li data-currency="usd">
-                <i class="icon icon-usd"></i>
+                <a href="#">
+                  <i class="icon icon-usd"></i>
+                </a>
               </li>
               <li data-currency="eur">
-                <i class="icon icon-eur"></i>
+                <a href="#">
+                  <i class="icon icon-eur"></i>
+                </a>
               </li>
             </ul>
           </div>
@@ -526,26 +534,31 @@
   <div class="pagination | row | dark-pane | dark-pane-mobile-center">
     <div class="col-lg-2 | pagination-section | show-types | d-none | d-lg-flex">
       <span>Вид:</span>
-      <button class="show-type show-type-vertical"><img src="./img/showType1.svg" alt=""></button>
+      <button class="show-type show-type-vertical active"><img src="./img/showType1.svg" alt=""></button>
       <button class="show-type show-type-horizon"><img src="./img/showType2.svg" alt=""></button>
     </div>
 
     <div class="col-6 | col-sm-5 | col-lg-3 | pagination-section | filter-date ">
       <div class="filter">
-        <input type="checkbox" name="filter-date" class="filter-control" id="filter-date-1">
-        <label for="filter-date-1" class="filter-label">
-          Дата добавления
-          <span class="filter-img"></span>
-        </label>
+        
+          <input type="checkbox" name="filter-date" class="filter-control" id="filter-date-1">
+          <label for="filter-date-1" class="filter-label">
+            <a href="#">
+              Дата добавления
+              <span class="filter-img"></span>
+            </a>
+          </label>
       </div>
     </div>
 
     <div class="col-6 | col-sm-4 | col-md-3 | col-lg-2 | pagination-section | filter-price">
-      <div class="filter">
+      <div class="filter sort-desc">
         <input type="checkbox" name="filter-date" class="filter-control" id="filter-price-1">
         <label for="filter-price-1" class="filter-label">
-          Цена
-          <span class="filter-img filter-dark"></span>
+          <a href="#">
+            Цена
+            <span class="filter-img filter-dark"></span>
+          </a>
         </label>
       </div>
     </div>
@@ -619,6 +632,7 @@
       <div class="price-wrapper">
         <div class="old">620 <i class="icon icon-rub"></i></div>
         <div class="new">550 <i class="icon icon-rub"></i></div>
+        <a href="#" ><img src="../img/light-close.svg" alt="" class="delete-from-cart d-none"></a>
       </div>
       <div class="price-params-container">
         <a href="#" class="buy-btn">
@@ -677,6 +691,7 @@
       <div class="price-wrapper">
         <div class="old">620 <i class="icon icon-rub"></i></div>
         <div class="new">550 <i class="icon icon-rub"></i></div>
+        <a href="#" ><img src="../img/light-close.svg" alt="" class="delete-from-cart d-none"></a>
       </div>
       <div class="price-params-container">
         <a href="#" class="buy-btn">
@@ -735,6 +750,7 @@
       <div class="price-wrapper">
         <div class="old">620 <i class="icon icon-rub"></i></div>
         <div class="new">550 <i class="icon icon-rub"></i></div>
+        <a href="#" ><img src="../img/light-close.svg" alt="" class="delete-from-cart d-none"></a>
       </div>
       <div class="price-params-container">
         <a href="#" class="buy-btn">
@@ -793,6 +809,7 @@
       <div class="price-wrapper">
         <div class="old">620 <i class="icon icon-rub"></i></div>
         <div class="new">550 <i class="icon icon-rub"></i></div>
+        <a href="#" ><img src="../img/light-close.svg" alt="" class="delete-from-cart d-none"></a>
       </div>
       <div class="price-params-container">
         <a href="#" class="buy-btn">
@@ -851,6 +868,7 @@
       <div class="price-wrapper">
         <div class="old">620 <i class="icon icon-rub"></i></div>
         <div class="new">550 <i class="icon icon-rub"></i></div>
+        <a href="#" ><img src="../img/light-close.svg" alt="" class="delete-from-cart d-none"></a>
       </div>
       <div class="price-params-container">
         <a href="#" class="buy-btn">
@@ -909,6 +927,7 @@
       <div class="price-wrapper">
         <div class="old">620 <i class="icon icon-rub"></i></div>
         <div class="new">550 <i class="icon icon-rub"></i></div>
+        <a href="#" ><img src="../img/light-close.svg" alt="" class="delete-from-cart d-none"></a>
       </div>
       <div class="price-params-container">
         <a href="#" class="buy-btn">
@@ -967,6 +986,7 @@
       <div class="price-wrapper">
         <div class="old">620 <i class="icon icon-rub"></i></div>
         <div class="new">550 <i class="icon icon-rub"></i></div>
+        <a href="#" ><img src="../img/light-close.svg" alt="" class="delete-from-cart d-none"></a>
       </div>
       <div class="price-params-container">
         <a href="#" class="buy-btn">
@@ -1025,6 +1045,7 @@
       <div class="price-wrapper">
         <div class="old">620 <i class="icon icon-rub"></i></div>
         <div class="new">550 <i class="icon icon-rub"></i></div>
+        <a href="#" ><img src="../img/light-close.svg" alt="" class="delete-from-cart d-none"></a>
       </div>
       <div class="price-params-container">
         <a href="#" class="buy-btn">
@@ -1157,26 +1178,31 @@
   <div class="pagination | row | dark-pane | dark-pane-mobile-center">
     <div class="col-lg-2 | pagination-section | show-types | d-none | d-lg-flex">
       <span>Вид:</span>
-      <button class="show-type show-type-vertical"><img src="./img/showType1.svg" alt=""></button>
+      <button class="show-type show-type-vertical active"><img src="./img/showType1.svg" alt=""></button>
       <button class="show-type show-type-horizon"><img src="./img/showType2.svg" alt=""></button>
     </div>
 
     <div class="col-6 | col-sm-5 | col-lg-3 | pagination-section | filter-date ">
       <div class="filter">
-        <input type="checkbox" name="filter-date" class="filter-control" id="filter-date-2">
-        <label for="filter-date-2" class="filter-label">
-          Дата добавления
-          <span class="filter-img"></span>
-        </label>
+        
+          <input type="checkbox" name="filter-date" class="filter-control" id="filter-date-2">
+          <label for="filter-date-2" class="filter-label">
+            <a href="#">
+              Дата добавления
+              <span class="filter-img"></span>
+            </a>
+          </label>
       </div>
     </div>
 
     <div class="col-6 | col-sm-4 | col-md-3 | col-lg-2 | pagination-section | filter-price">
-      <div class="filter">
+      <div class="filter sort-desc">
         <input type="checkbox" name="filter-date" class="filter-control" id="filter-price-2">
         <label for="filter-price-2" class="filter-label">
-          Цена
-          <span class="filter-img filter-dark"></span>
+          <a href="#">
+            Цена
+            <span class="filter-img filter-dark"></span>
+          </a>
         </label>
       </div>
     </div>
@@ -1250,6 +1276,7 @@
       <div class="price-wrapper">
         <div class="old">620 <i class="icon icon-rub"></i></div>
         <div class="new">550 <i class="icon icon-rub"></i></div>
+        <a href="#" ><img src="../img/light-close.svg" alt="" class="delete-from-cart d-none"></a>
       </div>
       <div class="price-params-container">
         <a href="#" class="buy-btn">
@@ -1308,6 +1335,7 @@
       <div class="price-wrapper">
         <div class="old">620 <i class="icon icon-rub"></i></div>
         <div class="new">550 <i class="icon icon-rub"></i></div>
+        <a href="#" ><img src="../img/light-close.svg" alt="" class="delete-from-cart d-none"></a>
       </div>
       <div class="price-params-container">
         <a href="#" class="buy-btn">
@@ -1366,6 +1394,7 @@
       <div class="price-wrapper">
         <div class="old">620 <i class="icon icon-rub"></i></div>
         <div class="new">550 <i class="icon icon-rub"></i></div>
+        <a href="#" ><img src="../img/light-close.svg" alt="" class="delete-from-cart d-none"></a>
       </div>
       <div class="price-params-container">
         <a href="#" class="buy-btn">
@@ -1424,6 +1453,7 @@
       <div class="price-wrapper">
         <div class="old">620 <i class="icon icon-rub"></i></div>
         <div class="new">550 <i class="icon icon-rub"></i></div>
+        <a href="#" ><img src="../img/light-close.svg" alt="" class="delete-from-cart d-none"></a>
       </div>
       <div class="price-params-container">
         <a href="#" class="buy-btn">
@@ -1482,6 +1512,7 @@
       <div class="price-wrapper">
         <div class="old">620 <i class="icon icon-rub"></i></div>
         <div class="new">550 <i class="icon icon-rub"></i></div>
+        <a href="#" ><img src="../img/light-close.svg" alt="" class="delete-from-cart d-none"></a>
       </div>
       <div class="price-params-container">
         <a href="#" class="buy-btn">
@@ -1540,6 +1571,7 @@
       <div class="price-wrapper">
         <div class="old">620 <i class="icon icon-rub"></i></div>
         <div class="new">550 <i class="icon icon-rub"></i></div>
+        <a href="#" ><img src="../img/light-close.svg" alt="" class="delete-from-cart d-none"></a>
       </div>
       <div class="price-params-container">
         <a href="#" class="buy-btn">
@@ -1598,6 +1630,7 @@
       <div class="price-wrapper">
         <div class="old">620 <i class="icon icon-rub"></i></div>
         <div class="new">550 <i class="icon icon-rub"></i></div>
+        <a href="#" ><img src="../img/light-close.svg" alt="" class="delete-from-cart d-none"></a>
       </div>
       <div class="price-params-container">
         <a href="#" class="buy-btn">
@@ -1656,6 +1689,7 @@
       <div class="price-wrapper">
         <div class="old">620 <i class="icon icon-rub"></i></div>
         <div class="new">550 <i class="icon icon-rub"></i></div>
+        <a href="#" ><img src="../img/light-close.svg" alt="" class="delete-from-cart d-none"></a>
       </div>
       <div class="price-params-container">
         <a href="#" class="buy-btn">
@@ -1788,26 +1822,31 @@
   <div class="pagination | row | dark-pane | dark-pane-mobile-center">
     <div class="col-lg-2 | pagination-section | show-types | d-none | d-lg-flex">
       <span>Вид:</span>
-      <button class="show-type show-type-vertical"><img src="./img/showType1.svg" alt=""></button>
+      <button class="show-type show-type-vertical active"><img src="./img/showType1.svg" alt=""></button>
       <button class="show-type show-type-horizon"><img src="./img/showType2.svg" alt=""></button>
     </div>
 
     <div class="col-6 | col-sm-5 | col-lg-3 | pagination-section | filter-date ">
       <div class="filter">
-        <input type="checkbox" name="filter-date" class="filter-control" id="filter-date-3">
-        <label for="filter-date-3" class="filter-label">
-          Дата добавления
-          <span class="filter-img"></span>
-        </label>
+        
+          <input type="checkbox" name="filter-date" class="filter-control" id="filter-date-3">
+          <label for="filter-date-3" class="filter-label">
+            <a href="#">
+              Дата добавления
+              <span class="filter-img"></span>
+            </a>
+          </label>
       </div>
     </div>
 
     <div class="col-6 | col-sm-4 | col-md-3 | col-lg-2 | pagination-section | filter-price">
-      <div class="filter">
+      <div class="filter sort-desc">
         <input type="checkbox" name="filter-date" class="filter-control" id="filter-price-3">
         <label for="filter-price-3" class="filter-label">
-          Цена
-          <span class="filter-img filter-dark"></span>
+          <a href="#">
+            Цена
+            <span class="filter-img filter-dark"></span>
+          </a>
         </label>
       </div>
     </div>
@@ -1881,6 +1920,7 @@
       <div class="price-wrapper">
         <div class="old">620 <i class="icon icon-rub"></i></div>
         <div class="new">550 <i class="icon icon-rub"></i></div>
+        <a href="#" ><img src="../img/light-close.svg" alt="" class="delete-from-cart d-none"></a>
       </div>
       <div class="price-params-container">
         <a href="#" class="buy-btn">
@@ -1939,6 +1979,7 @@
       <div class="price-wrapper">
         <div class="old">620 <i class="icon icon-rub"></i></div>
         <div class="new">550 <i class="icon icon-rub"></i></div>
+        <a href="#" ><img src="../img/light-close.svg" alt="" class="delete-from-cart d-none"></a>
       </div>
       <div class="price-params-container">
         <a href="#" class="buy-btn">
@@ -1997,6 +2038,7 @@
       <div class="price-wrapper">
         <div class="old">620 <i class="icon icon-rub"></i></div>
         <div class="new">550 <i class="icon icon-rub"></i></div>
+        <a href="#" ><img src="../img/light-close.svg" alt="" class="delete-from-cart d-none"></a>
       </div>
       <div class="price-params-container">
         <a href="#" class="buy-btn">
@@ -2055,6 +2097,7 @@
       <div class="price-wrapper">
         <div class="old">620 <i class="icon icon-rub"></i></div>
         <div class="new">550 <i class="icon icon-rub"></i></div>
+        <a href="#" ><img src="../img/light-close.svg" alt="" class="delete-from-cart d-none"></a>
       </div>
       <div class="price-params-container">
         <a href="#" class="buy-btn">
@@ -2113,6 +2156,7 @@
       <div class="price-wrapper">
         <div class="old">620 <i class="icon icon-rub"></i></div>
         <div class="new">550 <i class="icon icon-rub"></i></div>
+        <a href="#" ><img src="../img/light-close.svg" alt="" class="delete-from-cart d-none"></a>
       </div>
       <div class="price-params-container">
         <a href="#" class="buy-btn">
@@ -2171,6 +2215,7 @@
       <div class="price-wrapper">
         <div class="old">620 <i class="icon icon-rub"></i></div>
         <div class="new">550 <i class="icon icon-rub"></i></div>
+        <a href="#" ><img src="../img/light-close.svg" alt="" class="delete-from-cart d-none"></a>
       </div>
       <div class="price-params-container">
         <a href="#" class="buy-btn">
@@ -2229,6 +2274,7 @@
       <div class="price-wrapper">
         <div class="old">620 <i class="icon icon-rub"></i></div>
         <div class="new">550 <i class="icon icon-rub"></i></div>
+        <a href="#" ><img src="../img/light-close.svg" alt="" class="delete-from-cart d-none"></a>
       </div>
       <div class="price-params-container">
         <a href="#" class="buy-btn">
@@ -2287,6 +2333,7 @@
       <div class="price-wrapper">
         <div class="old">620 <i class="icon icon-rub"></i></div>
         <div class="new">550 <i class="icon icon-rub"></i></div>
+        <a href="#" ><img src="../img/light-close.svg" alt="" class="delete-from-cart d-none"></a>
       </div>
       <div class="price-params-container">
         <a href="#" class="buy-btn">
@@ -2419,26 +2466,31 @@
   <div class="pagination | row | dark-pane | dark-pane-mobile-center">
     <div class="col-lg-2 | pagination-section | show-types | d-none | d-lg-flex">
       <span>Вид:</span>
-      <button class="show-type show-type-vertical"><img src="./img/showType1.svg" alt=""></button>
+      <button class="show-type show-type-vertical active"><img src="./img/showType1.svg" alt=""></button>
       <button class="show-type show-type-horizon"><img src="./img/showType2.svg" alt=""></button>
     </div>
 
     <div class="col-6 | col-sm-5 | col-lg-3 | pagination-section | filter-date ">
       <div class="filter">
-        <input type="checkbox" name="filter-date" class="filter-control" id="filter-date-4">
-        <label for="filter-date-4" class="filter-label">
-          Дата добавления
-          <span class="filter-img"></span>
-        </label>
+        
+          <input type="checkbox" name="filter-date" class="filter-control" id="filter-date-4">
+          <label for="filter-date-4" class="filter-label">
+            <a href="#">
+              Дата добавления
+              <span class="filter-img"></span>
+            </a>
+          </label>
       </div>
     </div>
 
     <div class="col-6 | col-sm-4 | col-md-3 | col-lg-2 | pagination-section | filter-price">
-      <div class="filter">
+      <div class="filter sort-desc">
         <input type="checkbox" name="filter-date" class="filter-control" id="filter-price-4">
         <label for="filter-price-4" class="filter-label">
-          Цена
-          <span class="filter-img filter-dark"></span>
+          <a href="#">
+            Цена
+            <span class="filter-img filter-dark"></span>
+          </a>
         </label>
       </div>
     </div>
@@ -2512,6 +2564,7 @@
       <div class="price-wrapper">
         <div class="old">620 <i class="icon icon-rub"></i></div>
         <div class="new">550 <i class="icon icon-rub"></i></div>
+        <a href="#" ><img src="../img/light-close.svg" alt="" class="delete-from-cart d-none"></a>
       </div>
       <div class="price-params-container">
         <a href="#" class="buy-btn">
@@ -2570,6 +2623,7 @@
       <div class="price-wrapper">
         <div class="old">620 <i class="icon icon-rub"></i></div>
         <div class="new">550 <i class="icon icon-rub"></i></div>
+        <a href="#" ><img src="../img/light-close.svg" alt="" class="delete-from-cart d-none"></a>
       </div>
       <div class="price-params-container">
         <a href="#" class="buy-btn">
@@ -2628,6 +2682,7 @@
       <div class="price-wrapper">
         <div class="old">620 <i class="icon icon-rub"></i></div>
         <div class="new">550 <i class="icon icon-rub"></i></div>
+        <a href="#" ><img src="../img/light-close.svg" alt="" class="delete-from-cart d-none"></a>
       </div>
       <div class="price-params-container">
         <a href="#" class="buy-btn">
@@ -2686,6 +2741,7 @@
       <div class="price-wrapper">
         <div class="old">620 <i class="icon icon-rub"></i></div>
         <div class="new">550 <i class="icon icon-rub"></i></div>
+        <a href="#" ><img src="../img/light-close.svg" alt="" class="delete-from-cart d-none"></a>
       </div>
       <div class="price-params-container">
         <a href="#" class="buy-btn">
@@ -2744,6 +2800,7 @@
       <div class="price-wrapper">
         <div class="old">620 <i class="icon icon-rub"></i></div>
         <div class="new">550 <i class="icon icon-rub"></i></div>
+        <a href="#" ><img src="../img/light-close.svg" alt="" class="delete-from-cart d-none"></a>
       </div>
       <div class="price-params-container">
         <a href="#" class="buy-btn">
@@ -2802,6 +2859,7 @@
       <div class="price-wrapper">
         <div class="old">620 <i class="icon icon-rub"></i></div>
         <div class="new">550 <i class="icon icon-rub"></i></div>
+        <a href="#" ><img src="../img/light-close.svg" alt="" class="delete-from-cart d-none"></a>
       </div>
       <div class="price-params-container">
         <a href="#" class="buy-btn">
@@ -2860,6 +2918,7 @@
       <div class="price-wrapper">
         <div class="old">620 <i class="icon icon-rub"></i></div>
         <div class="new">550 <i class="icon icon-rub"></i></div>
+        <a href="#" ><img src="../img/light-close.svg" alt="" class="delete-from-cart d-none"></a>
       </div>
       <div class="price-params-container">
         <a href="#" class="buy-btn">
@@ -2918,6 +2977,7 @@
       <div class="price-wrapper">
         <div class="old">620 <i class="icon icon-rub"></i></div>
         <div class="new">550 <i class="icon icon-rub"></i></div>
+        <a href="#" ><img src="../img/light-close.svg" alt="" class="delete-from-cart d-none"></a>
       </div>
       <div class="price-params-container">
         <a href="#" class="buy-btn">
@@ -3060,7 +3120,7 @@
     </div>
   </div>
 
-  <div class="scroll-top d-none d-lg-block">
+  <div class="scroll-top d-none">
     <img src="../img/small-arrow-top.svg" alt="">
     <div class="scroll-top-text">Вверх</div>
   </div>
@@ -3111,8 +3171,8 @@
 
       <div class="price">
         <div class="price-wrapper">
-          <div class="old"><i class="icon icon-rub"></i>620 </div>
-          <div class="new"><i class="icon icon-rub"></i>550</div>
+          <div class="old">620 <i class="icon icon-rub"></i></div>
+          <div class="new">550 <i class="icon icon-rub"></i></div>
           <div class="offer">
             <button href="#" data-toggle="modal" data-target="#offerModal">
               <span>Предложить цену</span>
