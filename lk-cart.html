@@ -404,7 +404,7 @@
 
             <li class="nav-item">
               <a 
-                class="nav-link" 
+                class="nav-link " 
                 id="favorite-tab" 
                 data-toggle="tab" 
                 href="#favorite-tab-content" 
@@ -420,7 +420,7 @@
 
             <li class="nav-item">
               <a 
-                class="nav-link" 
+                class="nav-link | active | show" 
                 id="cart-tab" 
                 data-toggle="tab" 
                 href="#cart-tab-content" 
@@ -436,7 +436,7 @@
 
             <li class="nav-item">
               <a 
-                class="nav-link" 
+                class="nav-link |" 
                 id="history-tab" 
                 data-toggle="tab" 
                 href="#history-tab-content" 
@@ -488,41 +488,41 @@
               aria-labelledby="messages-tab"
             >
               <div class="messages-list">
-                <a href="lk-chat-dialog.html" class="btn btn-dark new-message">Написать сообщение</a>
-                <button class="btn btn-empty delete-message" disabled>Удалить</button>
+                <button class="btn btn-dark new-message">Написать сообщение</button>
+                <button class="btn btn-empty delete-message">Удалить</button>
                 <div class="text text-blue msg d-none">Сообщений нет</div>
-                <ul class="messages">
+                <ul class="messages ">
                   <li class="message-item">
                     <div class="left">
                       <div class="customCheck-item">
-                        <input type="checkbox" class="customCheck-input" name="delete-check-msg-1" id="delete-check-msg-1">
-                        <label class="customCheck-label" for="delete-check-msg-1"></label>
+                        <input type="checkbox" class="customCheck-input" name="delete-message-1" id="delete-message-1">
+                        <label class="customCheck-label" for="delete-message-1"></label>
                       </div>
                     </div>
-                    <a href="lk-chat.html" class="right">
+                    <div class="right open-chat">
                       <img src="../img/avatar_admin.jpg" class="avatar">
                       <div class="message-title">Цена для лота imp-2143 одобрена!</div>
                       <div class="date">21.09.2020 10:59</div>
-                    </a>
+                    </div>
                   </li>
                   <li class="message-item">
                     <div class="left">
                       <div class="customCheck-item">
-                        <input type="checkbox" class="customCheck-input" name="delete-check-msg-2" id="delete-check-msg-2">
-                        <label class="customCheck-label" for="delete-check-msg-2"></label>
+                        <input type="checkbox" class="customCheck-input" name="delete-message-1" id="delete-message-1">
+                        <label class="customCheck-label" for="delete-message-1"></label>
                       </div>
                     </div>
-                    <a href="lk-chat.html" class="right">
+                    <div class="right open-chat">
                       <img src="../img/avatar_admin.jpg" class="avatar">
                       <div class="message-title not-read">Цена для лота imp-2143 одобрена!</div>
                       <div class="date">21.09.2020 10:59</div>
-                    </a>
+                    </div>
                   </li>
                 </ul>
               </div>
 
               <div class="chat">
-                <a href="lk.html#messages" class="btn-back">
+                <a href="#" class="btn-back close-chat">
                   <img src="./img/circle-arrow-left.svg" alt=""> 
                   ВЕРНУТЬСЯ
                 </a>
@@ -611,8 +611,8 @@
                   </div>
 
                   <div class="chat-textarea">
-                    <form action="POST" class="send-to-chat">
-                      <input type="text" name="chat-title" id="chat-title" placeholder="Напишите заголовок (обязательное поле)" class="input" >
+                    <form action="" class="send-to-chat">
+                      <input type="text" name="chat-title" id="chat-title" placeholder="Напишите заголовок (обязательное поле)" class="input" required>
                       <textarea name="chat-input" id="chat-input" class="input" placeholder="Напишите сообщение"></textarea>
                       <input type="submit" value="Отправить" class="btn btn-dark send-chat-msg">
                     </form>
@@ -660,7 +660,7 @@
             </div>
             
             <div 
-              class="tab-pane | fade |" 
+              class="tab-pane | fade " 
               id="history-tab-content" 
               role="tabpanel" 
               aria-labelledby="history-tab"
@@ -1376,12 +1376,13 @@
             </div>
 
             <div 
-              class="tab-pane | fade " 
+              class="tab-pane | fade | active | show" 
               id="cart-tab-content" 
               role="tabpanel" 
               aria-labelledby="cart-tab"
             >
               <div class="text text-blue msg d-none">Товаров не найдено</div>
+
               <div class="text text-blue msg success-order d-none">
                 <img src="../img/success-order.svg" alt="">
                 <div class="success-order-msg">
@@ -1389,6 +1390,7 @@
                   Благодарим за покупку!
                 </div>
               </div>
+
               <div class="order product cart-list">
                 <div class="text text-blue text-bold order-in">
                   
@@ -1474,11 +1476,10 @@
     </div>
   </div>
 </div>
-                
                 <div class="order-footer">
 
                   <div class="order-text-dark | order-text-big | order-text-bold | order-block | col-6 | d-none | d-lg-flex">
-                    ВЫБРАНО ТОВАРОВ: <span class="order-text-check-number">0</span>
+                    ВЫБРАНО ТОВАРОВ: <span class="order-text-check-number">4</span>
                   </div>
 
                   <div class="order-text | order-block | order-block-flex | col-12 | col-lg-6">
@@ -1519,11 +1520,11 @@
                   </div>
 
                   <div class="btns | order-coupon | order-block | col-12 | col-lg-7 ">
-                    <input type="text" class="set-coupon input" placeholder="ПРИМЕНИТЬ КУПОН">
-                    <button class="set-coupon-ico"></button>
-                    <!-- <input type="text" class="set-coupon input" disabled placeholder="ПРИМЕНИТЬ КУПОН" value="Jyd45WD">  -->
-                    <!-- <button class="set-coupon-ico correct"></button> -->
-                    <!-- <div class="text text-dark text-bold correct-coupon-text">Купон успешно применен</div> -->
+                    <input type="text" class="set-coupon input" placeholder="ПРИМЕНИТЬ КУПОН"> 
+                    <button class="set-coupon-ico" disabled></button>
+                    <!-- <input type="text" class="set-coupon input" placeholder="ПРИМЕНИТЬ КУПОН" value="Jyd45WD" disabled>
+                    <button class="set-coupon-ico correct"></button> -->
+                    <!-- <div class="text text-dark text-bold">Купон успешно применен</div> -->
                   </div>
 
                   <div class="order-block | order-block-flex | col-12 | col-lg-5">
@@ -1537,7 +1538,7 @@
               </div>
 
               <div class="order-step-2 d-none">
-                <a href="#" class="btn-back">
+                <a href="#" class="btn-back close-chat">
                   <img src="./img/circle-arrow-left.svg" alt=""> 
                   ВЕРНУТЬСЯ
                 </a>
@@ -1623,9 +1624,9 @@
 
                     <div class="form-option">
                       <div class="customCheck-item">
-                        <input type="checkbox" class="customCheck-input" name="order-option-7" id="order-option-7" disabled>
+                        <input type="checkbox" class="customCheck-input" name="order-option-7" id="order-option-7">
                         <label class="customCheck-label" for="order-option-7">Застраховать на сумму (3 %)</label>
-                        <div id="insure" class="input"></div>
+                        <input type="text" value="6000" class="input" disabled>
                       </div>
                       <div class="option-price">180 р.</div>
                     </div>
@@ -1663,7 +1664,7 @@
 
                         <div class="order-result-item sum order-block-flex">
                           <div class="text text-blue text-bold order-block-title">ИТОГО:</div>
-                          <div class="text text-orange text-bold result order-block-content">2284 ₽ </div>
+                          <div class="text text-orange text-bold result order-block-content">2284 ₽</div>
                         </div>
 
                       </div>
@@ -1676,7 +1677,7 @@
               </div>
 
               <div class="order-step-3 d-none">
-                <a href="#" class="btn-back">
+                <a href="#" class="btn-back close-chat">
                   <img src="./img/circle-arrow-left.svg" alt=""> 
                   ВЕРНУТЬСЯ
                 </a>
@@ -1698,7 +1699,7 @@
                       <input type="radio" class="customCheck-input" name="order-option-pay" id="order-option-pay-2">
                       <label class="customCheck-label" for="order-option-pay-2">Оплата картой</label>
                     </div>
-                    <div class="option-price" id="final-sum">2284 ₽</div>
+                    <div class="option-price">2284 ₽</div>
                   </div>
                 </div>
 
@@ -1732,109 +1733,25 @@
               </div>
 
               <div class="steps">
-                <a href="lk.html#cart" class="step">
+                <button class="step">
                   <div class="left">01</div>
                   <div class="right">Выберите<br> товар</div>
-                </a>
+                </button>
 
-                <a href="lk-cart-delivery.html" class="step" disabled>
+                <button class="step" disabled>
                   <div class="left">02</div>
                   <div class="right">Укажите способ <br> доставки</div>
-                </a>
+                </button>
                 
-                <a href="lk-cart-payment.html" class="step" disabled>
+                <button class="step" disabled>
                   <div class="left">03</div>
                   <div class="right">Оплата</div>
-                </a>
+                </button>
 
-                <a href="lk-cart-delivery.html" class="btn btn-dark">Продолжить</a>
+                <div class="btn btn-dark">Продолжить</div>
 
               </div>
               
-              <!-- <form action="" class="mydata">
-                <div class="left-top mydata-side">
-                  
-                  <div class="field">
-                    <label for="data-name" id="data-name" class="text text-blue text-bold">Имя</label>
-                    <input type="text" class="input">
-                  </div>
-
-                  <div class="field">
-                    <label for="data-surname" id="data-surname" class="text text-blue text-bold">Фамилия</label>
-                    <input type="text" class="input">
-                  </div>
-                  
-                  <div class="field">
-                    <label for="data-patronymic" id="data-patronymic" class="text text-blue text-bold">Отчество</label>
-                    <input type="text" class="input">
-                  </div>
-
-                </div>
-
-                <div class="right-top mydata-side">
-                  
-                  <div class="field">
-                    <label for="data-email" id="data-email" class="text text-blue text-bold">E-mail</label>
-                    <input type="email" class="input">
-                  </div>
-
-                  <div class="field">
-                    <label for="data-phone" id="data-phone" class="text text-blue text-bold">Телефон</label>
-                    <input type="phone" class="input">
-                  </div>
-                  
-                  <div class="field">
-                    <label for="data-login" id="data-login" class="text text-blue text-bold">Логин</label>
-                    <input type="text" class="input">
-                  </div>
-
-                </div>
-
-                <div class="left-bottom mydata-side">
-                  <div class="category-title">Адрес:</div>
-                  
-                  <div class="field">
-                    <label for="data-country" id="data-country" class="text text-blue text-bold">Страна</label>
-                    <input type="text" class="input">
-                  </div>
-
-                  <div class="field">
-                    <label for="data-postalcode" id="data-postalcode" class="text text-blue text-bold">Почтовый индекс</label>
-                    <input type="text" class="input">
-                  </div>
-                  
-                  <div class="field">
-                    <label for="data-city" id="data-city" class="text text-blue text-bold">Город</label>
-                    <input type="text" class="input">
-                  </div>
-
-                  <div class="field">
-                    <label for="data-address" id="data-address" class="text text-blue text-bold">Улица, дом, квартира</label>
-                    <input type="text" class="input">
-                  </div>
-
-                </div>
-
-                <div class="right-bottom mydata-side">
-                  <div class="category-title">СМЕНА ПАРОЛЯ:</div>
-                  
-                  <div class="field">
-                    <label for="data-newpassword" id="data-newpassword" class="text text-blue text-bold">Новый пароль</label>
-                    <input type="password" class="input">
-                  </div>
-
-                  <div class="field">
-                    <label for="data-newpassword2" id="data-newpassword2" class="text text-blue text-bold">Подтверждение нового пароля</label>
-                    <input type="password" class="input">
-                  </div>
-
-                  <div class="field">
-                    <input type="submit" class="btn btn-dark" value="СОХРАНИТЬ ИЗМЕНЕНИЯ">
-                  </div>
-
-                </div>
-
-              </form> -->
             </div>
           </div>
         </div>
@@ -1899,31 +1816,6 @@
     </div>
   </div>
 </div>
-
-<script>
-  window.onload = () => {
-    let tab = document.querySelector(window.location.hash + '-tab');
-    let content;
-
-    if (!tab){
-      tab = document.querySelector('#messages-tab')
-      content = document.querySelector('#messages-tab-content')
-    } else {
-      content = document.querySelector(window.location.hash + '-tab-content')
-    }
-
-    tab.classList.add('active')
-    tab.classList.add('show')
-
-    content.classList.add('active')
-    content.classList.add('show')
-    /*
-      active | show
-      tab-pane
-      nav-link
-    */
-  }
-</script>
 
 <footer>
 
