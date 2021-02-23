@@ -12793,6 +12793,11 @@ main .main-banner img {
 .products-slider {
   margin-top: 30px
 }
+.posts-slider .product:hover,
+.products-slider .product:hover {
+  -webkit-box-shadow: rgba(149,157,165,.2) 0 8px 24px;
+  box-shadow: rgba(149,157,165,.2) 0 8px 24px
+}
 .posts-slider .wrapper,
 .products-slider .wrapper {
   display: -webkit-box;
@@ -13970,24 +13975,56 @@ main .main-banner img {
   font-weight: 600;
   margin-bottom: 16px
 }
-#lkTabs {
+.panel {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 10px;
+  width: 100%;
+  border: 1px solid #91bed4;
+  border-radius: 5px;
+  margin-bottom: 15px
+}
+.panel .panel-title {
+  color: #004666;
+  font-size: 16px;
+  font-weight: 600
+}
+.panel:hover {
+  text-decoration: none
+}
+.new-price {
+  font-weight: 600;
+  font-size: 1.8em;
+  color: #f26101
+}
+.new-price i {
+  font-size: 12px
+}
+.lkTabs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
   margin-bottom: 30px
 }
-#lkTabs .nav-item {
+.lkTabs .lkTabs-link {
   -ms-flex-preferred-size: 15%;
-  flex-basis: 15%
-}
-#lkTabs .nav-item:last-child {
-  -ms-flex-preferred-size: 5%;
-  flex-basis: 5%
-}
-#lkTabs .nav-item .nav-link {
+  flex-basis: 15%;
   color: #000;
   font-weight: 500;
   font-size: 14px;
@@ -14004,23 +14041,30 @@ main .main-banner img {
   border-bottom: 1px solid #0e5c83;
   padding: 15px 10px
 }
-#lkTabs .nav-item .nav-link.active {
+.lkTabs .lkTabs-link:hover {
+  text-decoration: none
+}
+.lkTabs .lkTabs-link.active {
   background-color: #e1f4fd
 }
-#lkTabs .nav-item .nav-link .tab-name {
+.lkTabs .lkTabs-link:last-child {
+  -ms-flex-preferred-size: 5%;
+  flex-basis: 5%
+}
+.lkTabs .lkTabs-link .tab-name {
   padding: 0 5px;
   white-space: nowrap
 }
-#lkTabs .nav-item .nav-link i {
+.lkTabs .lkTabs-link i {
   width: 20px;
   height: 20px;
   font-size: 20px;
   color: #54a2c8
 }
-#lkTabs .nav-item .nav-link i::before {
+.lkTabs .lkTabs-link i::before {
   line-height: 20px
 }
-#lkTabs .nav-item .nav-link .notification {
+.lkTabs .lkTabs-link .notification {
   background-color: #f26101;
   color: #fff;
   border-radius: 50%;
@@ -14040,29 +14084,29 @@ main .main-banner img {
   margin-top: 80px;
   margin-bottom: 80px
 }
-#lkTabContent .new-message {
+.new-message {
   width: 221px;
   height: 33px;
   font-size: 14px;
   line-height: 14px
 }
-#lkTabContent .delete-message {
+.delete-message {
   width: 126px;
   height: 33px;
   margin-left: 20px
 }
-#lkTabContent .delete-message:disabled {
+.delete-message:disabled {
   cursor: not-allowed
 }
-#lkTabContent .chat-messages-list {
+.chat-messages-list {
   margin-top: 40px;
   max-height: 80vh;
   overflow-y: auto
 }
-#lkTabContent .messages-list {
+.messages-list {
   margin-bottom: 25px
 }
-#lkTabContent .messages-list .messages .message-item {
+.messages-list .messages .message-item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -14073,10 +14117,10 @@ main .main-banner img {
   cursor: pointer;
   padding: 0
 }
-#lkTabContent .messages-list .messages .message-item a:hover {
+.messages-list .messages .message-item a:hover {
   text-decoration: none
 }
-#lkTabContent .messages-list .messages .message-item .right {
+.messages-list .messages .message-item .right {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -14086,23 +14130,23 @@ main .main-banner img {
   align-items: center;
   padding: 25px 0
 }
-#lkTabContent .messages-list .messages .message-item:first-child .right {
+.messages-list .messages .message-item:first-child .right {
   margin-top: 37px
 }
-#lkTabContent .messages-list .messages .message-item:first-child .left {
+.messages-list .messages .message-item:first-child .left {
   margin-top: 37px
 }
-#lkTabContent .messages-list .messages .message-item:last-child {
+.messages-list .messages .message-item:last-child {
   border: none
 }
-#lkTabContent .messages-list .messages .message-item:last-child .right {
+.messages-list .messages .message-item:last-child .right {
   margin-bottom: 45px
 }
-#lkTabContent .messages-list .messages .message-item:last-child .left {
+.messages-list .messages .message-item:last-child .left {
   margin-bottom: 45px
 }
-#lkTabContent .messages-list .messages .message-item .customCheck-item .customCheck-input:checked + .customCheck-label:before,
-#lkTabContent .messages-list .messages .message-item .customCheck-item .customCheck-input:not(:checked) + .customCheck-label:before {
+.messages-list .messages .message-item .customCheck-item .customCheck-input:checked + .customCheck-label:before,
+.messages-list .messages .message-item .customCheck-item .customCheck-input:not(:checked) + .customCheck-label:before {
   right: 20px;
   left: auto;
   width: 20px;
@@ -14110,32 +14154,32 @@ main .main-banner img {
   top: 0;
   margin-bottom: 0
 }
-#lkTabContent .messages-list .messages .message-item .customCheck-item .customCheck-input:checked + .customCheck-label:after,
-#lkTabContent .messages-list .messages .message-item .customCheck-item .customCheck-input:not(:checked) + .customCheck-label:after {
+.messages-list .messages .message-item .customCheck-item .customCheck-input:checked + .customCheck-label:after,
+.messages-list .messages .message-item .customCheck-item .customCheck-input:not(:checked) + .customCheck-label:after {
   width: 15px;
   height: 15px;
   top: 3px;
   left: 10px
 }
-#lkTabContent .messages-list .messages .message-item .avatar {
+.messages-list .messages .message-item .avatar {
   margin-right: 20px
 }
-#lkTabContent .messages-list .messages .message-item .message-title {
+.messages-list .messages .message-item .message-title {
   font-size: 18px;
   font-weight: 400;
   color: #000
 }
-#lkTabContent .messages-list .messages .message-item .message-title.not-read {
+.messages-list .messages .message-item .message-title.not-read {
   font-weight: 700
 }
-#lkTabContent .messages-list .messages .message-item .date {
+.messages-list .messages .message-item .date {
   margin-left: auto;
   font-size: 14px;
   font-weight: 400;
   color: #004666;
   white-space: nowrap
 }
-#lkTabContent .chat-message {
+.chat-message {
   font-size: 14px;
   font-weight: 400;
   color: #000;
@@ -14144,70 +14188,67 @@ main .main-banner img {
   display: -ms-flexbox;
   display: flex
 }
-#lkTabContent .chat-message .message {
+.chat-message .message {
   padding: 15px;
   border-radius: 5px;
   display: inline-block;
   margin-bottom: 5px
 }
-#lkTabContent .chat-message .date {
+.chat-message .date {
   font-size: 10px;
   font-weight: 400
 }
-#lkTabContent .chat-message .avatar {
+.chat-message .avatar {
   width: 35px;
   height: 35px;
   -o-object-fit: contain;
   object-fit: contain;
   margin-top: 5px
 }
-#lkTabContent .chat-message.from {
+.chat-message.from {
   -webkit-box-pack: start;
   -ms-flex-pack: start;
   justify-content: flex-start
 }
-#lkTabContent .chat-message.from + .from {
+.chat-message.from + .from {
   margin-left: 35px
 }
-#lkTabContent .chat-message.from + .from .avatar {
+.chat-message.from + .from .avatar {
   display: none
 }
-#lkTabContent .chat-message.from + .to {
+.chat-message.from + .to {
   margin-top: 30px
 }
-#lkTabContent .chat-message.from .message {
+.chat-message.from .message {
   background-color: rgba(0,70,103,.2);
   text-align: left
 }
-#lkTabContent .chat-message.from .right {
+.chat-message.from .right {
   margin-left: 15px
 }
-#lkTabContent .chat-message.to {
+.chat-message.to {
   -webkit-box-pack: end;
   -ms-flex-pack: end;
   justify-content: flex-end
 }
-#lkTabContent .chat-message.to + .to {
+.chat-message.to + .to {
   margin-right: 35px
 }
-#lkTabContent .chat-message.to + .to .avatar {
+.chat-message.to + .to .avatar {
   display: none
 }
-#lkTabContent .chat-message.to + .from {
+.chat-message.to + .from {
   margin-top: 30px
 }
-#lkTabContent .chat-message.to .left {
+.chat-message.to .left {
   margin-right: 15px
 }
-#lkTabContent .chat-message.to .message {
+.chat-message.to .message {
   background-color: rgba(242,97,1,.3);
   text-align: right
 }
-#lkTabContent .chat-message.to .date {
+.chat-message.to .date {
   text-align: right
-}
-.chat {
-  display: none
 }
 .chat .chat-window {
   margin-top: 10px
@@ -14236,8 +14277,7 @@ main .main-banner img {
   font-size: 14px;
   font-weight: 400;
   margin-bottom: 10px;
-  margin-top: 80px;
-  display: none
+  margin-top: 80px
 }
 .send-to-chat #chat-input {
   height: 73px;
@@ -14381,14 +14421,6 @@ main .main-banner img {
   justify-content: space-between;
   margin-bottom: 15px
 }
-.order .order-item .delete-from-cart {
-  width: 17px;
-  height: 17px;
-  position: absolute;
-  top: 0;
-  right: 0;
-  cursor: pointer
-}
 .order .order-item .right {
   border: 1px solid #91bed4;
   border-radius: 5px;
@@ -14451,6 +14483,15 @@ main .main-banner img {
 }
 .order .order-item .order-item-price .old + .new {
   margin-top: 0
+}
+.delete-from-cart {
+  display: none;
+  width: 17px;
+  height: 17px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  cursor: pointer
 }
 .order-block-flex {
   display: -webkit-box;
@@ -14889,6 +14930,14 @@ main .main-banner img {
 .order-text-check-number {
   margin-left: 5px
 }
+.favorits .delete-from-cart {
+  display: block!important;
+  margin-left: 20px;
+  position: static
+}
+.cart-list .delete-from-cart {
+  display: block!important
+}
 .cart-list .customCheck-item .customCheck-input:checked + .customCheck-label:after,
 .cart-list .customCheck-item .customCheck-input:not(:checked) + .customCheck-label:after {
   width: 16px;
@@ -15266,18 +15315,15 @@ main .main-banner img {
 .perpage .custom-select-option:hover {
   cursor: pointer
 }
-.categories li.active {
-  width: calc(100% + 30px);
-  padding: 0 15px;
-  background-color: #d9e8f5
+.categories {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap
 }
-.nav-tabs {
-  border-bottom: none
-}
-.nav-tabs .tab {
-  position: relative
-}
-.nav-tabs .tab.nav-link {
+.categories .categories-link {
+  position: relative;
   padding: 30px 0;
   background-color: #f5f6f6;
   color: #004666;
@@ -15293,15 +15339,16 @@ main .main-banner img {
   border-radius: 0;
   border: none;
   border-right: 1px solid #8b8b8b;
-  font-size: 16px
+  font-size: 16px;
+  min-width: 25%
 }
-.nav-tabs .tab.active {
+.categories .categories-link.active {
   background-color: #d9e8f5
 }
-.nav-tabs .tab:last-child {
+.categories .categories-link:last-child {
   border-right: none
 }
-.nav-tabs .tab .badge {
+.categories .categories-link .badge {
   position: absolute;
   font-size: 16px;
   font-weight: 500;
@@ -15671,11 +15718,12 @@ footer {
   .header__bar form input::placeholder {
     color: #fff
   }
-  .nav-tabs .tab.nav-link {
+  .categories .categories-link {
     border: none;
-    margin-bottom: 15px
+    margin-bottom: 15px;
+    width: 50%
   }
-  .nav-tabs .tab.nav-link:nth-child(odd) {
+  .categories .categories-link:nth-child(odd) {
     border-right: 1px solid #8b8b8b
   }
   .year-link {
@@ -15939,8 +15987,16 @@ footer {
     width: 90%;
     margin: 0 auto
   }
-  #lkTabs .nav-item .nav-link {
-    margin-top: 18px
+  .lkTabs {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center
+  }
+  .lkTabs .lkTabs-link {
+    margin-top: 18px;
+    -ms-flex-preferred-size: 48%;
+    flex-basis: 48%;
+    margin-right: 2%
   }
   .mydata .mydata-side {
     width: 100%
@@ -15952,10 +16008,10 @@ footer {
   .mydata .mydata-side .field input[type=submit] {
     height: 44px
   }
-  #lkTabContent .messages-list .messages .customCheck-item {
+  .messages-list .messages .customCheck-item {
     margin-right: 20px
   }
-  #lkTabContent .messages-list .messages .message-item:last-child {
+  .messages-list .messages .message-item:last-child {
     border-bottom: 1px solid #8b8b8b
   }
   .order.product .order-footer {
@@ -16083,12 +16139,16 @@ footer {
   .order.product .price .delete-from-cart {
     top: 10px
   }
-  #favorite-tab-content .delete-from-cart {
+  .favorits .delete-from-cart {
+    display: block;
     position: absolute;
     top: 0
   }
-  #favorite-tab-content .price .price-wrapper .old {
-    margin-right: auto
+  .favorits .price .price-wrapper {
+    position: relative
+  }
+  .favorits .price .price-wrapper .old {
+    margin-right: auto!important
   }
   .steps {
     -ms-flex-wrap: wrap;
@@ -16112,8 +16172,21 @@ footer {
   .option-price {
     white-space: nowrap
   }
+  .category-title {
+    max-width: 70%
+  }
 }
 @media (max-width:768px) {
+  .modal-offer .modal-dialog {
+    min-width: 90%
+  }
+  .favorits .price-wrapper {
+    position: relative
+  }
+  .favorits .delete-from-cart {
+    position: absolute;
+    top: -10px
+  }
   .product .params {
     display: none
   }

@@ -23,7 +23,9 @@
           <a href="#" class="banner-top-link">
             <img src="" alt="" class="banner-top-img">
           </a>
-          <i class="icon icon-close"></i>
+          <a href="#">
+            <i class="icon icon-close"></i>
+          </a>
         </div>
       </div>
     </div>
@@ -44,6 +46,18 @@
 
     <ul>
       <li>
+        <a href="#">Магазин</a>
+        <ul class="submenu">
+          <li><a href="#">Отечественные почтовые марки</a></li>
+          <li><a href="categories.html">Иностранные почтовые марки</a></li>
+          <li><a href="#">Каталоги</a></li>
+          <li><a href="#">Почтовые отправления</a></li>
+          <li><a href="#">Непочтовые марки</a></li>
+          <li><a href="#">Разное</a></li>
+          <li><a href="#">Тематика</a></li>
+        </ul>
+      </li>
+      <li>
         <a href="#">Услуги</a>
         <ul class="submenu">
           <li><a href="#">Сертификат</a></li>
@@ -56,7 +70,6 @@
       <li><a href="#">Доставка</a></li>
       <li><a href="#">Помощь</a></li>
       <li><a href="#">Контакты</a></li>
-      <li><a href="#">Магазин</a></li>
     </ul>
 
   </div>
@@ -109,34 +122,34 @@
                 <div class="notification">2</div>
                 <ul class="submenu">
                   <li id="messages">
-                    <a href="lk.html#messages">
+                    <a href="lk-messages.html">
                       <i class="icon icon-tablet"></i>
                       <span>Сообщения</span>
                       <div class="notification">2</div>
                     </a>
                   </li>
                   <li id="favorite">
-                    <a href="lk.html#favorite">
+                    <a href="lk-favorite.html">
                       <i class="icon icon-favorite"></i>
                       <span>Избранное</span>
                       <div class="notification">11</div>
                     </a>
                   </li>
                   <li>
-                    <a href="lk.html#cart">
+                    <a href="lk-cart.htm">
                       <i class="icon icon-cart"></i>
                       <span>Корзина</span>
                       <div class="notification">3</div>
                     </a>
                   </li>
                   <li>
-                    <a href="lk.html#history">
+                    <a href="lk-history.html">
                       <i class="icon icon-history"></i>
                       <span>История заказов</span>
                     </a>
                   </li>
                   <li>
-                    <a href="lk.html#data">
+                    <a href="lk-data.html">
                       <i class="icon icon-data"></i>
                       <span>Мои данные</span>
                     </a>
@@ -151,7 +164,7 @@
               </li>
 
               <li>
-                <a href="lk.html#cart">
+                <a href="lk-cart.html">
                   <i class="icon icon-cart">
                     <div class="notification">3</div>
                   </i>
@@ -387,1035 +400,67 @@
 </form>
         
         <div>
-          <div class="wrapper">
-          </div>
-          <ul 
-            class="nav | nav-tabs" 
-            id="lkTabs" 
-            role="tablist"
-          >
+          <div class="wrapper"></div>
 
-            <li class="nav-item">
-              <a 
-                class="nav-link " 
-                id="messages-tab" 
-                data-toggle="tab" 
-                href="#messages-tab-content" 
-                role="tab" 
-                aria-controls="messages" 
-                aria-selected="true"
-              >
-                <i class="icon | icon-tablet"></i>
-                <span class="tab-name">Сообщения</span>
-                <div class="notification">2</div>
-              </a>
-            </li>
+          <nav class="lkTabs">
 
-            <li class="nav-item">
-              <a 
-                class="nav-link " 
-                id="favorite-tab" 
-                data-toggle="tab" 
-                href="#favorite-tab-content" 
-                role="tab" 
-                aria-controls="favorite" 
-                aria-selected="true"
-              >
-                <i class="icon icon-favorite"></i>
-                <span class="tab-name">Избранное</span>
-                <div class="notification">2</div>
-              </a>
-            </li>
-
-            <li class="nav-item">
-              <a 
-                class="nav-link | active | show" 
-                id="cart-tab" 
-                data-toggle="tab" 
-                href="#cart-tab-content" 
-                role="tab" 
-                aria-controls="cart" 
-                aria-selected="true"
-              >
-              <i class="icon icon-cart"></i>
-                <span class="tab-name">Корзина</span>
-                <div class="notification">2</div>
-              </a>
-            </li>
-
-            <li class="nav-item">
-              <a 
-                class="nav-link |" 
-                id="history-tab" 
-                data-toggle="tab" 
-                href="#history-tab-content" 
-                role="tab" 
-                aria-controls="history" 
-                aria-selected="true"
-              >
-              <i class="icon icon-history"></i>
-                <span class="tab-name">История заказов</span>
-                <div class="notification">2</div>
-              </a>
-            </li>
-
-            <li class="nav-item">
-              <a 
-                class="nav-link" 
-                id="data-tab" 
-                data-toggle="tab" 
-                href="#data-tab-content" 
-                role="tab" 
-                aria-controls="data" 
-                aria-selected="true"
-              >
-              <i class="icon icon-data"></i>
-                <span class="tab-name">Мои данные</span>
-                <!-- <div class="notification">2</div> -->
-              </a>
-            </li>
-
-            <li class="nav-item" onclick="window.location.href='logout.html'">
-              <a 
-                class="nav-link" 
-                id="exit-tab" 
-                data-toggle="tab" 
-                href="#exit-tab-content" 
-                role="tab" 
-                aria-controls="exit" 
-                aria-selected="true"
-              >
-              <i class="icon icon-exit"></i>
-              <span class="tab-name"></a></span>
-            </li>
-          </ul>
-          <div class="tab-content" id="lkTabContent">
-            <div 
-              class="tab-pane | fade " 
-              id="messages-tab-content" 
-              role="tabpanel" 
-              aria-labelledby="messages-tab"
-            >
-              <form class="messages-list">
-                <button class="btn btn-dark new-message">Написать сообщение</button>
-                <button class="btn btn-empty delete-message">Удалить</button>
-                <div class="text text-blue msg d-none">Сообщений нет</div>
-                <ul class="messages ">
-                  <li class="message-item">
-                    <div class="left">
-                      <div class="customCheck-item">
-                        <input type="checkbox" class="customCheck-input" name="delete-message-1" id="delete-message-1">
-                        <label class="customCheck-label" for="delete-message-1"></label>
-                      </div>
-                    </div>
-                    <div class="right open-chat">
-                      <img src="../img/avatar_admin.jpg" class="avatar">
-                      <div class="message-title">Цена для лота imp-2143 одобрена!</div>
-                      <div class="date">21.09.2020 10:59</div>
-                    </div>
-                  </li>
-                  <li class="message-item">
-                    <div class="left">
-                      <div class="customCheck-item">
-                        <input type="checkbox" class="customCheck-input" name="delete-message-1" id="delete-message-1">
-                        <label class="customCheck-label" for="delete-message-1"></label>
-                      </div>
-                    </div>
-                    <div class="right open-chat">
-                      <img src="../img/avatar_admin.jpg" class="avatar">
-                      <div class="message-title not-read">Цена для лота imp-2143 одобрена!</div>
-                      <div class="date">21.09.2020 10:59</div>
-                    </div>
-                  </li>
-                </ul>
-              </form>
-
-              <div class="chat">
-                <a href="#" class="btn-back close-chat">
-                  <img src="./img/circle-arrow-left.svg" alt=""> 
-                  ВЕРНУТЬСЯ
-                </a>
-                
-                <div class="chat-window">
-                  
-                  <h2 class="chat-title text text-dark text-bold">Хочу продать</h2>
-                  
-                 
-
-                  <div class="chat-messages-list">
-                    
-                    <div class="chat-message to">
-                      <div class="left">
-                        <div class="message">Почтовый ящик указан не верно.</div>
-                        <div class="date">20.09.2020 10:58</div>
-                      </div>
-                      <div class="right">
-                        <img src="../img/avatar_admin.jpg" alt="" class="avatar">
-                      </div>
-                    </div>
-
-                    <div class="chat-message to">
-                      <div class="left">
-                        <div class="message">На сколько я понимаю картинка горизонтальна отражена?<br>
-                          Это не совсем марка. Она изготавливалась для наклеивания на деньги СССР  во время его развала, чтобы выделить деньги Приднестровья.<br>
-                          Дело в том что из за быстрого распада СССР, в приднестровье не успели отладить производство собственных денежных знаков.<br> Поэтому они клеили эти марки на купюры 1961 и 1992 годов, превращая их тем самым в свои.<br>
-                          Ценность ее минимальная.</div>
-                        <div class="date">20.09.2020 10:58</div>
-                      </div>
-                      <div class="right">
-                        <img src="../img/avatar_admin.jpg" alt="" class="avatar">
-                      </div>
-                    </div>
-
-                    <div class="chat-message from">
-                      <div class="left">
-                        <img src="../img/user-avatar.jpg" alt="" class="avatar">
-                      </div>
-                      <div class="right">
-                        <div class="message">А вообще у меня есть альбом марок всяких разных  . Есть ли <br>у вас интерес  но не очень старых годов так 60- 50</div>
-                        <div class="date">20.09.2020 10:58</div>
-                      </div>
-                    </div>
-
-                    <div class="chat-message from">
-                      <div class="left">
-                        <img src="../img/user-avatar.jpg" alt="" class="avatar">
-                      </div>
-                      <div class="right">
-                        <div class="message">А вообще у меня есть альбом марок всяких разных  . Есть ли у вас интерес  но не очень старых годов так 60- 50</div>
-                        <div class="date">20.09.2020 10:58</div>
-                      </div>
-                    </div>
-
-                    <div class="chat-message from">
-                      <div class="left">
-                        <img src="../img/user-avatar.jpg" alt="" class="avatar">
-                      </div>
-                      <div class="right">
-                        <div class="message">А вообще у меня есть альбом марок всяких разных  . Есть ли у вас интерес  но не очень старых годов так 60- 50</div>
-                        <div class="date">20.09.2020 10:58</div>
-                      </div>
-                    </div>
-
-                    <div class="chat-message from">
-                      <div class="left">
-                        <img src="../img/user-avatar.jpg" alt="" class="avatar">
-                      </div>
-                      <div class="right">
-                        <div class="message">А вообще у меня есть альбом марок всяких разных  . Есть ли у вас интерес  но не очень старых годов так 60- 50</div>
-                        <div class="date">20.09.2020 10:58</div>
-                      </div>
-                    </div>
-
-                    <div class="chat-message from">
-                      <div class="left">
-                        <img src="../img/user-avatar.jpg" alt="" class="avatar">
-                      </div>
-                      <div class="right">
-                        <div class="message">А вообще у меня есть альбом марок всяких разных  . Есть ли у вас интерес  но не очень старых годов так 60- 50</div>
-                        <div class="date">20.09.2020 10:58</div>
-                      </div>
-                    </div>
-                    
-                  </div>
-
-                  <div class="chat-textarea">
-                    <form action="" class="send-to-chat">
-                      <input type="text" name="chat-title" id="chat-title" placeholder="Напишите заголовок (обязательное поле)" class="input" required>
-                      <textarea name="chat-input" id="chat-input" class="input" placeholder="Напишите сообщение"></textarea>
-                      <input type="submit" value="Отправить" class="btn btn-dark send-chat-msg">
-                    </form>
-                  </div>
-                </div>
-              </div>
-
-              <div class="pagination | row | dark-pane">
-    <div class="col-6 | col-lg-4 | pagination-section">
-      <button class="show-more"></button>
-      <span>Показать еще</span>
-    </div>
-    <div class="col-6 | col-lg-4 | pagination-section">
-      <nav>
-        <ul class="pages">
-          <li class="page-prev disabled">
-            <a class="page-link" href="#" tabindex="-1" aria-disabled="true"></a>
-          </li>
-          <li class="page-item active">
-            <a class="page-link" href="#">1</a>
-          </li>
-          <li class="page-item">
-            <a class="page-link" href="#">2</a>
-          </li>
-          <li class="page-item">
-            <a class="page-link" href="#">3</a>
-          </li>
-          <input type="number" min="1" class="pagination-input goto d-lg-flex" placeholder="Перейти к:">
-          <li class="page-next">
-            <a class="page-link" href="#"></a>
-          </li>
-        </ul>
-      </nav>
-    </div>
-    <div class="col-lg-4 | d-lg-flex | pagination-section | perpage">
-      <span>Показывать по:</span>
-      <select id="mySelect">
-        <option value="20">20</option>
-        <option value="50">50</option>
-        <option value="100">100</option>
-      </select>
-      <button class="change-perpage"></button>
-    </div>
-  </div>
-            </div>
-            
-            <div 
-              class="tab-pane | fade " 
-              id="history-tab-content" 
-              role="tabpanel" 
-              aria-labelledby="history-tab"
-            >
-              <a href="#" class="btn-back">
-                <img src="./img/circle-arrow-left.svg" alt=""> 
-                ВЕРНУТЬСЯ
-              </a>
-              <div class="order product">
-                <div class="text text-dark text-bold order-number">Заказ № 0004543 от 19.10.2020</div>
-                
-                <div class="order-item">
-  <div class="left">
-    <div class="customCheck-item">
-      <input type="checkbox" class="customCheck-input" name="delete-check-@@id" id="delete-check-@@id">
-      <label class="customCheck-label" for="delete-check-@@id"></label>
-    </div>
-  </div>
-  <div class="right">
-    <div class="order-item-img" data-src="../img/mark.jpg" >
-      <img src="../img/mark.jpg" alt="">
-    </div>
-    <a href="single-product.html" class="order-item-title">
-      1898-99. Британская Гвиана. Набор “The 60th Anniversary of the Reign of Queen Victoria”, *II (•) [imp-13198]
+    <a class="lkTabs-link " href="lk-messages.html">
+      <i class="icon | icon-tablet"></i>
+      <span class="tab-name">Сообщения</span>
+      <div class="notification">2</div>
     </a>
-    <div class="order-item-price">
-      <div class="price">
-        <div class="price-wrapper">
-          <div class="price-wrapper-title d-none">Цена</div>
-          <div class="old">620 <i class="icon icon-rub"></i></div>
-          <div class="new">550 <i class="icon icon-rub"></i></div>
-          <a href="#" ><img src="../img/light-close.svg" alt="" class="delete-from-cart"></a>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-                <div class="order-item">
-  <div class="left">
-    <div class="customCheck-item">
-      <input type="checkbox" class="customCheck-input" name="delete-check-@@id" id="delete-check-@@id">
-      <label class="customCheck-label" for="delete-check-@@id"></label>
-    </div>
-  </div>
-  <div class="right">
-    <div class="order-item-img" data-src="../img/mark.jpg" >
-      <img src="../img/mark.jpg" alt="">
-    </div>
-    <a href="single-product.html" class="order-item-title">
-      1898-99. Британская Гвиана. Набор “The 60th Anniversary of the Reign of Queen Victoria”, *II (•) [imp-13198]
+
+    <a class="lkTabs-link " href="lk-favorits.html">
+      <i class="icon | icon-favorite"></i>
+      <span class="tab-name">Избранное</span>
+      <div class="notification">2</div>
     </a>
-    <div class="order-item-price">
-      <div class="price">
-        <div class="price-wrapper">
-          <div class="price-wrapper-title d-none">Цена</div>
-          <div class="old">620 <i class="icon icon-rub"></i></div>
-          <div class="new">550 <i class="icon icon-rub"></i></div>
-          <a href="#" ><img src="../img/light-close.svg" alt="" class="delete-from-cart"></a>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-                <div class="order-item">
-  <div class="left">
-    <div class="customCheck-item">
-      <input type="checkbox" class="customCheck-input" name="delete-check-@@id" id="delete-check-@@id">
-      <label class="customCheck-label" for="delete-check-@@id"></label>
-    </div>
-  </div>
-  <div class="right">
-    <div class="order-item-img" data-src="../img/mark.jpg" >
-      <img src="../img/mark.jpg" alt="">
-    </div>
-    <a href="single-product.html" class="order-item-title">
-      1898-99. Британская Гвиана. Набор “The 60th Anniversary of the Reign of Queen Victoria”, *II (•) [imp-13198]
+
+    <a class="lkTabs-link active" href="lk-cart.html">
+      <i class="icon | icon-cart"></i>
+      <span class="tab-name">Корзина</span>
+      <div class="notification">2</div>
     </a>
-    <div class="order-item-price">
-      <div class="price">
-        <div class="price-wrapper">
-          <div class="price-wrapper-title d-none">Цена</div>
-          <div class="old">620 <i class="icon icon-rub"></i></div>
-          <div class="new">550 <i class="icon icon-rub"></i></div>
-          <a href="#" ><img src="../img/light-close.svg" alt="" class="delete-from-cart"></a>
+
+    <a class="lkTabs-link " href="lk-history.html">
+      <i class="icon | icon-history"></i>
+      <span class="tab-name">История заказов</span>
+      <div class="notification">2</div>
+    </a>
+
+    <a class="lkTabs-link " href="lk-data.html">
+      <i class="icon | icon-data"></i>
+      <span class="tab-name">Мои данные</span>
+      <div class="notification">2</div>
+    </a>
+
+    <a class="lkTabs-link " href="logout.html">
+      <i class="icon | icon-exit"></i>
+      <!-- <span class="tab-name">Мои данные</span>
+      <div class="notification">2</div> -->
+    </a>
+
+  </nav>
+          
+          <form action="" class="order-form">
+    
+    <div class="text text-blue msg d-none">Товаров не найдено</div>
+    
+    <div class="text text-blue msg success-order d-none">
+        <img src="../img/success-order.svg" alt="">
+        <div class="success-order-msg">
+            ВАШ НОМЕР ЗАКАЗА №15123121<br>
+            Благодарим за покупку!
         </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-                <div class="order-result-list">
-                  
-                  <div class="order-result-item">
-                    <div class="text text-gray">Стоимость заказа:</div>
-                    <div class="text text-blue text-bold">1650 ₽</div>
-                  </div>
-
-                  <div class="order-result-item">
-                    <div class="text text-gray">Стоимость доставки:</div>
-                    <div class="text text-blue text-bold">150 ₽</div>
-                  </div>
-
-                  <div class="order-result-item sum">
-                    <div class="text text-blue text-bold">ИТОГО:</div>
-                    <div class="text text-orange text-bold result">1800 ₽</div>
-                  </div>
-                
-                </div>
-              </div>
-            </div>
-
-            <div 
-              class="tab-pane | fade " 
-              id="favorite-tab-content" 
-              role="tabpanel" 
-              aria-labelledby="favorite-tab"
-            >
-              <div class="products horizon">
-                <div class="product">
-  
-    <div class="img-wrapper">
-
-      <a href="#" class="add-to-favorite">
-        <i class="icon icon-favorite"></i>
-      </a>
-
-      <img src="./img/mark.jpg" alt="">
-
-      <!-- <div class="discount">-11%</div> -->
-
-      <button href="#" class="fast-view" data-toggle="modal" data-target="#productModal">
-        <i class="icon icon-eye"></i>
-        <span>Быстрый просмотр</span>
-      </button>
-
     </div>
 
-    <div class="params-container">
-      <div class="title" data-link="/single-product.html">
-        1938. Стандартный выпуск. Одоевский смотрит в даль
-      </div>
-  
-      <ul class="params">
-        <li>
-          <i class="icon stamp-type type-1"></i>
-        </li>
-        <li>
-          <span>Перф.</span>
-          <div>Лин. 12 &frac12;</div>
-        </li>
-        <li>
-          <a href="#">СЕРТИФИКАТ</a>
-        </li>
-        <li>
-          <div><span>Растр.</span>1211 ГР, 1212-1213 ВР</div>
-        </li>
-      </ul>
-    </div>
-
-    <div class="price">
-      <div class="price-wrapper">
-        <div class="old">620 <i class="icon icon-rub"></i></div>
-        <div class="new">550 <i class="icon icon-rub"></i></div>
-        <a href="#" ><img src="../img/light-close.svg" alt="" class="delete-from-cart d-none"></a>
-      </div>
-      <div class="price-params-container">
-        <a href="#" class="buy-btn">
-          <span>В корзину</span>
-          <i class="icon icon-cart"></i>
-        </a>
-        <a href="#" class="add-to-favorite">
-          <i class="icon icon-favorite"></i>
-        </a>
-      </div>
-    </div>
-
-  </div>
-                <div class="product">
-  
-    <div class="img-wrapper">
-
-      <a href="#" class="add-to-favorite">
-        <i class="icon icon-favorite"></i>
-      </a>
-
-      <img src="./img/mark.jpg" alt="">
-
-      <!-- <div class="discount">-11%</div> -->
-
-      <button href="#" class="fast-view" data-toggle="modal" data-target="#productModal">
-        <i class="icon icon-eye"></i>
-        <span>Быстрый просмотр</span>
-      </button>
-
-    </div>
-
-    <div class="params-container">
-      <div class="title" data-link="/single-product.html">
-        1938. Стандартный выпуск. Одоевский смотрит в даль
-      </div>
-  
-      <ul class="params">
-        <li>
-          <i class="icon stamp-type type-1"></i>
-        </li>
-        <li>
-          <span>Перф.</span>
-          <div>Лин. 12 &frac12;</div>
-        </li>
-        <li>
-          <a href="#">СЕРТИФИКАТ</a>
-        </li>
-        <li>
-          <div><span>Растр.</span>1211 ГР, 1212-1213 ВР</div>
-        </li>
-      </ul>
-    </div>
-
-    <div class="price">
-      <div class="price-wrapper">
-        <div class="old">620 <i class="icon icon-rub"></i></div>
-        <div class="new">550 <i class="icon icon-rub"></i></div>
-        <a href="#" ><img src="../img/light-close.svg" alt="" class="delete-from-cart d-none"></a>
-      </div>
-      <div class="price-params-container">
-        <a href="#" class="buy-btn">
-          <span>В корзину</span>
-          <i class="icon icon-cart"></i>
-        </a>
-        <a href="#" class="add-to-favorite">
-          <i class="icon icon-favorite"></i>
-        </a>
-      </div>
-    </div>
-
-  </div>
-                <div class="product">
-  
-    <div class="img-wrapper">
-
-      <a href="#" class="add-to-favorite">
-        <i class="icon icon-favorite"></i>
-      </a>
-
-      <img src="./img/mark.jpg" alt="">
-
-      <!-- <div class="discount">-11%</div> -->
-
-      <button href="#" class="fast-view" data-toggle="modal" data-target="#productModal">
-        <i class="icon icon-eye"></i>
-        <span>Быстрый просмотр</span>
-      </button>
-
-    </div>
-
-    <div class="params-container">
-      <div class="title" data-link="/single-product.html">
-        1938. Стандартный выпуск. Одоевский смотрит в даль
-      </div>
-  
-      <ul class="params">
-        <li>
-          <i class="icon stamp-type type-1"></i>
-        </li>
-        <li>
-          <span>Перф.</span>
-          <div>Лин. 12 &frac12;</div>
-        </li>
-        <li>
-          <a href="#">СЕРТИФИКАТ</a>
-        </li>
-        <li>
-          <div><span>Растр.</span>1211 ГР, 1212-1213 ВР</div>
-        </li>
-      </ul>
-    </div>
-
-    <div class="price">
-      <div class="price-wrapper">
-        <div class="old">620 <i class="icon icon-rub"></i></div>
-        <div class="new">550 <i class="icon icon-rub"></i></div>
-        <a href="#" ><img src="../img/light-close.svg" alt="" class="delete-from-cart d-none"></a>
-      </div>
-      <div class="price-params-container">
-        <a href="#" class="buy-btn">
-          <span>В корзину</span>
-          <i class="icon icon-cart"></i>
-        </a>
-        <a href="#" class="add-to-favorite">
-          <i class="icon icon-favorite"></i>
-        </a>
-      </div>
-    </div>
-
-  </div>
-                <div class="product">
-  
-    <div class="img-wrapper">
-
-      <a href="#" class="add-to-favorite">
-        <i class="icon icon-favorite"></i>
-      </a>
-
-      <img src="./img/mark.jpg" alt="">
-
-      <!-- <div class="discount">-11%</div> -->
-
-      <button href="#" class="fast-view" data-toggle="modal" data-target="#productModal">
-        <i class="icon icon-eye"></i>
-        <span>Быстрый просмотр</span>
-      </button>
-
-    </div>
-
-    <div class="params-container">
-      <div class="title" data-link="/single-product.html">
-        1938. Стандартный выпуск. Одоевский смотрит в даль
-      </div>
-  
-      <ul class="params">
-        <li>
-          <i class="icon stamp-type type-1"></i>
-        </li>
-        <li>
-          <span>Перф.</span>
-          <div>Лин. 12 &frac12;</div>
-        </li>
-        <li>
-          <a href="#">СЕРТИФИКАТ</a>
-        </li>
-        <li>
-          <div><span>Растр.</span>1211 ГР, 1212-1213 ВР</div>
-        </li>
-      </ul>
-    </div>
-
-    <div class="price">
-      <div class="price-wrapper">
-        <div class="old">620 <i class="icon icon-rub"></i></div>
-        <div class="new">550 <i class="icon icon-rub"></i></div>
-        <a href="#" ><img src="../img/light-close.svg" alt="" class="delete-from-cart d-none"></a>
-      </div>
-      <div class="price-params-container">
-        <a href="#" class="buy-btn">
-          <span>В корзину</span>
-          <i class="icon icon-cart"></i>
-        </a>
-        <a href="#" class="add-to-favorite">
-          <i class="icon icon-favorite"></i>
-        </a>
-      </div>
-    </div>
-
-  </div>
-                <div class="product">
-  
-    <div class="img-wrapper">
-
-      <a href="#" class="add-to-favorite">
-        <i class="icon icon-favorite"></i>
-      </a>
-
-      <img src="./img/mark.jpg" alt="">
-
-      <!-- <div class="discount">-11%</div> -->
-
-      <button href="#" class="fast-view" data-toggle="modal" data-target="#productModal">
-        <i class="icon icon-eye"></i>
-        <span>Быстрый просмотр</span>
-      </button>
-
-    </div>
-
-    <div class="params-container">
-      <div class="title" data-link="/single-product.html">
-        1938. Стандартный выпуск. Одоевский смотрит в даль
-      </div>
-  
-      <ul class="params">
-        <li>
-          <i class="icon stamp-type type-1"></i>
-        </li>
-        <li>
-          <span>Перф.</span>
-          <div>Лин. 12 &frac12;</div>
-        </li>
-        <li>
-          <a href="#">СЕРТИФИКАТ</a>
-        </li>
-        <li>
-          <div><span>Растр.</span>1211 ГР, 1212-1213 ВР</div>
-        </li>
-      </ul>
-    </div>
-
-    <div class="price">
-      <div class="price-wrapper">
-        <div class="old">620 <i class="icon icon-rub"></i></div>
-        <div class="new">550 <i class="icon icon-rub"></i></div>
-        <a href="#" ><img src="../img/light-close.svg" alt="" class="delete-from-cart d-none"></a>
-      </div>
-      <div class="price-params-container">
-        <a href="#" class="buy-btn">
-          <span>В корзину</span>
-          <i class="icon icon-cart"></i>
-        </a>
-        <a href="#" class="add-to-favorite">
-          <i class="icon icon-favorite"></i>
-        </a>
-      </div>
-    </div>
-
-  </div>
-                <div class="product">
-  
-    <div class="img-wrapper">
-
-      <a href="#" class="add-to-favorite">
-        <i class="icon icon-favorite"></i>
-      </a>
-
-      <img src="./img/mark.jpg" alt="">
-
-      <!-- <div class="discount">-11%</div> -->
-
-      <button href="#" class="fast-view" data-toggle="modal" data-target="#productModal">
-        <i class="icon icon-eye"></i>
-        <span>Быстрый просмотр</span>
-      </button>
-
-    </div>
-
-    <div class="params-container">
-      <div class="title" data-link="/single-product.html">
-        1938. Стандартный выпуск. Одоевский смотрит в даль
-      </div>
-  
-      <ul class="params">
-        <li>
-          <i class="icon stamp-type type-1"></i>
-        </li>
-        <li>
-          <span>Перф.</span>
-          <div>Лин. 12 &frac12;</div>
-        </li>
-        <li>
-          <a href="#">СЕРТИФИКАТ</a>
-        </li>
-        <li>
-          <div><span>Растр.</span>1211 ГР, 1212-1213 ВР</div>
-        </li>
-      </ul>
-    </div>
-
-    <div class="price">
-      <div class="price-wrapper">
-        <div class="old">620 <i class="icon icon-rub"></i></div>
-        <div class="new">550 <i class="icon icon-rub"></i></div>
-        <a href="#" ><img src="../img/light-close.svg" alt="" class="delete-from-cart d-none"></a>
-      </div>
-      <div class="price-params-container">
-        <a href="#" class="buy-btn">
-          <span>В корзину</span>
-          <i class="icon icon-cart"></i>
-        </a>
-        <a href="#" class="add-to-favorite">
-          <i class="icon icon-favorite"></i>
-        </a>
-      </div>
-    </div>
-
-  </div>
-                <div class="product">
-  
-    <div class="img-wrapper">
-
-      <a href="#" class="add-to-favorite">
-        <i class="icon icon-favorite"></i>
-      </a>
-
-      <img src="./img/mark.jpg" alt="">
-
-      <!-- <div class="discount">-11%</div> -->
-
-      <button href="#" class="fast-view" data-toggle="modal" data-target="#productModal">
-        <i class="icon icon-eye"></i>
-        <span>Быстрый просмотр</span>
-      </button>
-
-    </div>
-
-    <div class="params-container">
-      <div class="title" data-link="/single-product.html">
-        1938. Стандартный выпуск. Одоевский смотрит в даль
-      </div>
-  
-      <ul class="params">
-        <li>
-          <i class="icon stamp-type type-1"></i>
-        </li>
-        <li>
-          <span>Перф.</span>
-          <div>Лин. 12 &frac12;</div>
-        </li>
-        <li>
-          <a href="#">СЕРТИФИКАТ</a>
-        </li>
-        <li>
-          <div><span>Растр.</span>1211 ГР, 1212-1213 ВР</div>
-        </li>
-      </ul>
-    </div>
-
-    <div class="price">
-      <div class="price-wrapper">
-        <div class="old">620 <i class="icon icon-rub"></i></div>
-        <div class="new">550 <i class="icon icon-rub"></i></div>
-        <a href="#" ><img src="../img/light-close.svg" alt="" class="delete-from-cart d-none"></a>
-      </div>
-      <div class="price-params-container">
-        <a href="#" class="buy-btn">
-          <span>В корзину</span>
-          <i class="icon icon-cart"></i>
-        </a>
-        <a href="#" class="add-to-favorite">
-          <i class="icon icon-favorite"></i>
-        </a>
-      </div>
-    </div>
-
-  </div>
-                <div class="product">
-  
-    <div class="img-wrapper">
-
-      <a href="#" class="add-to-favorite">
-        <i class="icon icon-favorite"></i>
-      </a>
-
-      <img src="./img/mark.jpg" alt="">
-
-      <!-- <div class="discount">-11%</div> -->
-
-      <button href="#" class="fast-view" data-toggle="modal" data-target="#productModal">
-        <i class="icon icon-eye"></i>
-        <span>Быстрый просмотр</span>
-      </button>
-
-    </div>
-
-    <div class="params-container">
-      <div class="title" data-link="/single-product.html">
-        1938. Стандартный выпуск. Одоевский смотрит в даль
-      </div>
-  
-      <ul class="params">
-        <li>
-          <i class="icon stamp-type type-1"></i>
-        </li>
-        <li>
-          <span>Перф.</span>
-          <div>Лин. 12 &frac12;</div>
-        </li>
-        <li>
-          <a href="#">СЕРТИФИКАТ</a>
-        </li>
-        <li>
-          <div><span>Растр.</span>1211 ГР, 1212-1213 ВР</div>
-        </li>
-      </ul>
-    </div>
-
-    <div class="price">
-      <div class="price-wrapper">
-        <div class="old">620 <i class="icon icon-rub"></i></div>
-        <div class="new">550 <i class="icon icon-rub"></i></div>
-        <a href="#" ><img src="../img/light-close.svg" alt="" class="delete-from-cart d-none"></a>
-      </div>
-      <div class="price-params-container">
-        <a href="#" class="buy-btn">
-          <span>В корзину</span>
-          <i class="icon icon-cart"></i>
-        </a>
-        <a href="#" class="add-to-favorite">
-          <i class="icon icon-favorite"></i>
-        </a>
-      </div>
-    </div>
-
-  </div>
-              </div>
-              <div class="pagination | row | dark-pane">
-    <div class="col-6 | col-lg-4 | pagination-section">
-      <button class="show-more"></button>
-      <span>Показать еще</span>
-    </div>
-    <div class="col-6 | col-lg-4 | pagination-section">
-      <nav>
-        <ul class="pages">
-          <li class="page-prev disabled">
-            <a class="page-link" href="#" tabindex="-1" aria-disabled="true"></a>
-          </li>
-          <li class="page-item active">
-            <a class="page-link" href="#">1</a>
-          </li>
-          <li class="page-item">
-            <a class="page-link" href="#">2</a>
-          </li>
-          <li class="page-item">
-            <a class="page-link" href="#">3</a>
-          </li>
-          <input type="number" min="1" class="pagination-input goto d-lg-flex" placeholder="Перейти к:">
-          <li class="page-next">
-            <a class="page-link" href="#"></a>
-          </li>
-        </ul>
-      </nav>
-    </div>
-    <div class="col-lg-4 | d-lg-flex | pagination-section | perpage">
-      <span>Показывать по:</span>
-      <select id="mySelect">
-        <option value="20">20</option>
-        <option value="50">50</option>
-        <option value="100">100</option>
-      </select>
-      <button class="change-perpage"></button>
-    </div>
-  </div>
-            </div>
-
-            <div 
-              class="tab-pane | fade |" 
-              id="data-tab-content" 
-              role="tabpanel" 
-              aria-labelledby="data-tab"
-            >
-              <form action="" class="mydata">
-                <div class="left-top mydata-side">
-                  
-                  <div class="field">
-                    <label for="data-name" id="data-name" class="text text-blue text-bold">Имя</label>
-                    <input type="text" class="input">
-                  </div>
-
-                  <div class="field">
-                    <label for="data-surname" id="data-surname" class="text text-blue text-bold">Фамилия</label>
-                    <input type="text" class="input">
-                  </div>
-                  
-                  <div class="field">
-                    <label for="data-patronymic" id="data-patronymic" class="text text-blue text-bold">Отчество</label>
-                    <input type="text" class="input">
-                  </div>
-
-                </div>
-
-                <div class="right-top mydata-side">
-                  
-                  <div class="field">
-                    <label for="data-email" id="data-email" class="text text-blue text-bold">E-mail</label>
-                    <input type="email" class="input">
-                  </div>
-
-                  <div class="field">
-                    <label for="data-phone" id="data-phone" class="text text-blue text-bold">Телефон</label>
-                    <input type="phone" class="input">
-                  </div>
-                  
-                  <div class="field">
-                    <label for="data-login" id="data-login" class="text text-blue text-bold">Логин</label>
-                    <input type="text" class="input">
-                  </div>
-
-                </div>
-
-                <div class="left-bottom mydata-side">
-                  <div class="category-title">Адрес:</div>
-                  
-                  <div class="field">
-                    <label for="data-country" id="data-country" class="text text-blue text-bold">Страна</label>
-                    <input type="text" class="input">
-                  </div>
-
-                  <div class="field">
-                    <label for="data-postalcode" id="data-postalcode" class="text text-blue text-bold">Почтовый индекс</label>
-                    <input type="text" class="input">
-                  </div>
-                  
-                  <div class="field">
-                    <label for="data-city" id="data-city" class="text text-blue text-bold">Город</label>
-                    <input type="text" class="input">
-                  </div>
-
-                  <div class="field">
-                    <label for="data-address" id="data-address" class="text text-blue text-bold">Улица, дом, квартира</label>
-                    <input type="text" class="input">
-                  </div>
-
-                </div>
-
-                <div class="right-bottom mydata-side">
-                  <div class="category-title">СМЕНА ПАРОЛЯ:</div>
-                  
-                  <div class="field">
-                    <label for="data-newpassword" id="data-newpassword" class="text text-blue text-bold">Новый пароль</label>
-                    <input type="password" class="input">
-                  </div>
-
-                  <div class="field">
-                    <label for="data-newpassword2" id="data-newpassword2" class="text text-blue text-bold">Подтверждение нового пароля</label>
-                    <input type="password" class="input">
-                  </div>
-
-                  <div class="field">
-                    <input type="submit" class="btn btn-dark" value="СОХРАНИТЬ ИЗМЕНЕНИЯ">
-                  </div>
-
-                </div>
-
-              </form>
-            </div>
-
-            <div 
-              class="tab-pane | fade | active | show" 
-              id="cart-tab-content" 
-              role="tabpanel" 
-              aria-labelledby="cart-tab"
-            >
-              <div class="text text-blue msg d-none">Товаров не найдено</div>
-
-              <div class="text text-blue msg success-order d-none">
-                <img src="../img/success-order.svg" alt="">
-                <div class="success-order-msg">
-                  ВАШ НОМЕР ЗАКАЗА №15123121<br>
-                  Благодарим за покупку!
-                </div>
-              </div>
-
-              <div class="order product cart-list d-none">
-                <div class="text text-blue text-bold order-in">
-                  
-                  <button class="text text-blue text-bold check-all" type="button">Выбрать все</button>
-                  <div class="text text-gray order-in-cart">Товаров в корзине: <span>6</span></div>
-                </div>
-                
-                <div class="order-item">
+    <div class="order product cart-list d-none">
+        <div class="text text-blue text-bold order-in">
+            <button class="text text-blue text-bold check-all" type="button">Выбрать все</button>
+            <div class="text text-gray order-in-cart">Товаров в корзине: <span>6</span></div>
+        </div>
+        
+        <div class="order-item">
   <div class="left">
     <div class="customCheck-item">
       <input type="checkbox" class="customCheck-input" name="delete-check-1" id="delete-check-1">
@@ -1441,7 +486,7 @@
     </div>
   </div>
 </div>
-                <div class="order-item">
+        <div class="order-item">
   <div class="left">
     <div class="customCheck-item">
       <input type="checkbox" class="customCheck-input" name="delete-check-2" id="delete-check-2">
@@ -1467,7 +512,7 @@
     </div>
   </div>
 </div>
-                <div class="order-item">
+        <div class="order-item">
   <div class="left">
     <div class="customCheck-item">
       <input type="checkbox" class="customCheck-input" name="delete-check-3" id="delete-check-3">
@@ -1493,287 +538,296 @@
     </div>
   </div>
 </div>
-                <div class="order-footer">
+    
+        <div class="order-footer">
 
-                  <div class="order-text-dark | order-text-big | order-text-bold | order-block | col-6 | d-none | d-lg-flex">
-                    ВЫБРАНО ТОВАРОВ: <span class="order-text-check-number">0</span>
-                  </div>
+            <div class="order-text-dark | order-text-big | order-text-bold | order-block | col-6 | d-none | d-lg-flex">
+                ВЫБРАНО ТОВАРОВ: <span class="order-text-check-number">0</span>
+            </div>
 
-                  <div class="order-text | order-block | order-block-flex | col-12 | col-lg-6">
-                    <div class="order-text-gray order-block-title">Всего:</div>
-                    <div class="order-text-dark order-text-medium order-text-bold order-block-content">2750 ₽</div>
-                  </div>
-                  
-                  <div class="order-item | order-block | order-block-coupon | col-12 | d-none">
-                    <div class="left">
-                      <div class="customCheck-item">
+            <div class="order-text | order-block | order-block-flex | col-12 | col-lg-6">
+                <div class="order-text-gray order-block-title">Всего:</div>
+                <div class="order-text-dark order-text-medium order-text-bold order-block-content">2750 ₽</div>
+            </div>
+            
+            <div class="order-item | order-block | order-block-coupon | col-12 | d-none">
+                <div class="left">
+                    <div class="customCheck-item">
                         <input type="checkbox" class="customCheck-input" name="delete-check-4" id="delete-check-4">
                         <label class="customCheck-label" for="delete-check-4"></label>
-                      </div>
                     </div>
-                    <div class="right">
-                      <div class="order-item-img">
+                </div>
+                <div class="right">
+                    <div class="order-item-img">
                         <img src="../img/coupon.svg" alt="">
-                      </div>
-                      <div class="order-item-title">
+                    </div>
+                    <div class="order-item-title">
                         Купон 3% на следующую покупку
-                      </div>
-                      <div class="order-item-price">
+                    </div>
+                    <div class="order-item-price">
                         <div class="price">
-                          <div class="price-wrapper">
-                            <div class="price-wrapper-title d-none">Цена</div>
-                            <!-- <div class="old">620 <i class="icon icon-rub"></i></div> -->
-                            <div class="new">0 <i class="icon icon-rub"></i></div>
-                            <a href="#" ><img src="../img/light-close.svg" alt="" class="delete-from-cart"></a>
-                          </div>
+                            <div class="price-wrapper">
+                                <div class="price-wrapper-title d-none">Цена</div>
+                                <!-- <div class="old">620 <i class="icon icon-rub"></i></div> -->
+                                <div class="new">0 <i class="icon icon-rub"></i></div>
+                                <a href="#" ><img src="../img/light-close.svg" alt="" class="delete-from-cart"></a>
+                            </div>
                         </div>
-                      </div>
                     </div>
-                  </div>
-
-                  <div class="order-text | order-block | order-block-flex | col-12 | d-none">
-                    <div class="order-text-gray order-block-title">Скидка 3%:</div>
-                    <div class="order-text-dark order-text-medium order-text-bold order-block-content">66 ₽</div>
-                  </div>
-
-                  <div class="btns | order-coupon | order-block | col-12 | col-lg-7 ">
-                    <input type="text" class="set-coupon input" placeholder="ПРИМЕНИТЬ КУПОН"> 
-                    <button class="set-coupon-ico" disabled></button>
-                    <!-- <input type="text" class="set-coupon input" placeholder="ПРИМЕНИТЬ КУПОН" value="Jyd45WD" disabled>
-                    <button class="set-coupon-ico correct"></button> -->
-                    <!-- <div class="text text-dark text-bold">Купон успешно применен</div> -->
-                  </div>
-
-                  <div class="order-block | order-block-flex | col-12 | col-lg-5">
-                    <div class="order-text-dark order-text-bold order-text-sum order-block-title">ВЫБРАНО НА СУММУ:</div>
-                    <div class="order-cost-sum order-block-content">66 ₽</div>
-                  </div>
-
                 </div>
-
-                <button class="button-gift" data-toggle="modal" data-target="#giftModal" type="button"><img src="../img/gift.svg" alt="">ВЫБРАТЬ ПОДАРОК</button>
-              </div>
-
-              <div class="order-step-2">
-                <a href="#" class="btn-back">
-                  <img src="./img/circle-arrow-left.svg" alt=""> 
-                  ВЕРНУТЬСЯ
-                </a>
-                <h1 class="step-title">Укажите способ доставки</h1>
-                <form action="" class="order-form">
-                  
-                  <div class="form-block">
-                    <div class="form-option">
-                      <div class="customCheck-item">
-                        <input type="radio" class="customCheck-input" name="order-option" id="order-option-1">
-                        <label class="customCheck-label" for="order-option-1">Самовывоз из магазина по адресу:   С-Пб, наб. канала Грибоедова, 70</label>
-                      </div>
-                      <div class="option-price">бесплатно</div>
-                    </div>
-                  </div>
-
-                  <div class="form-block">
-                    <div class="form-option">
-                      <div class="customCheck-item">
-                        <input type="radio" class="customCheck-input" name="order-option" id="order-option-2">
-                        <label class="customCheck-label" for="order-option-2">Заказная бандероль / письмо почтой России (до ближайшего отделения связи) </label>
-                      </div>
-                      <div class="option-price">150 р.</div>
-                    </div>
-
-                    <div class="form-option-2 js-hide">
-                      <h2 class="form-block-title">Проверьте соответствие адреса доставки</h2>
-                      <div class="input">199326, Москва, Шаболовка, 36, кв. 118</div>
-                    </div>
-                  </div>
-
-                  <div class="form-block">
-                    <div class="form-option">
-                      <div class="customCheck-item">
-                        <input type="radio" class="customCheck-input" name="order-option" id="order-option-3">
-                        <label class="customCheck-label" for="order-option-3">Отправление I класса почтой России  (ускоренное, до ближайшего отделения связи)</label>
-                      </div>
-                      <div class="option-price">250 р.</div>
-                    </div>
-                  </div>
-
-                  <div class="form-block-list">
-
-                    <h2 class="form-block-title">Курьерская доставка </h2>
-
-                    <div class="form-block">
-                      <div class="form-option">
-                        <div class="customCheck-item">
-                          <input type="radio" class="customCheck-input" name="order-option" id="order-option-4">
-                          <label class="customCheck-label" for="order-option-4">СПб, Лен. обл., Москва, Московская обл.</label>
-                        </div>
-                        <div class="option-price">500 р.</div>
-                      </div>
-                    </div>
-    
-                    <div class="form-block">
-                      <div class="form-option">
-                        <div class="customCheck-item">
-                          <input type="radio" class="customCheck-input" name="order-option" id="order-option-5">
-                          <label class="customCheck-label" for="order-option-5">Другие регионы РФ</label>
-                        </div>
-                        <div class="option-price">1000 р.</div>
-                      </div>
-                    </div>
-
-                  </div>
-
-                  <div class="form-block">
-                    <div class="form-option">
-                      <div class="customCheck-item">
-                        <input type="radio" class="customCheck-input" name="order-option" id="order-option-6">
-                        <label class="customCheck-label" for="order-option-6">Доставка за границу или другие варианты,  требующие индивидуального рассмотрения</label>
-                      </div>
-                      <!-- <div class="option-price">250 р.</div> -->
-                    </div>
-                    <span class="form-block-description">* Обращаем внимание, что обсудить доставку возможно только в будние дни с 10 : 00 до 19 : 00 по Московскому времени</span>
-                    
-                  </div>
-
-                  <div class="form-block-list">
-
-                    <h2 class="form-block-title form-block-title-big">Страхование отправления</h2>
-
-                    <div class="form-option">
-                      <div class="customCheck-item">
-                        <input type="checkbox" class="customCheck-input" name="order-option-7" id="order-option-7" disabled>
-                        <label class="customCheck-label" for="order-option-7">Застраховать на сумму (3 %)</label>
-                        <div id="insure" class="input"></div>
-                      </div>
-                      <div class="option-price">180 р.</div>
-                    </div>
-
-                    <div class="form-footer order-footer">
-
-                      <div class="form-side | col-12 | col-lg-6">
-                        <h2 class="form-block-title">Комментарий к заказу (если имеется)</h2>
-                        <textarea name="order-option-8" id="order-option-8" class="input textarea"></textarea>
-                      </div>
-
-                      <div class="form-side | col-12 | col-lg-6">
-
-                        <div class="order-block-flex">
-                          <div class="order-text-gray order-block-title">Стоимость заказа:</div>
-                          <div class="order-text-dark order-text-medium order-text-bold order-block-content">2134 ₽</div>
-                        </div>
-
-                        <div class="order-block-flex">
-                          <div class="order-text-gray order-block-title">Стоимость доставки:</div>
-                          <div class="order-text-dark order-text-medium order-text-bold order-block-content">150 ₽</div>
-                      </div>
-
-                      </div>
-
-                      <div class="form-side | col-12 | col-lg-6">
-
-                        <div class="order-text-dark | d-lg-block | order-text-big | d-none | order-text-bold | order-block ">
-                          ВЫБРАНО ТОВАРОВ: <span class="order-text-check-number">0</span>
-                        </div>
-
-                      </div>
-
-                      <div class="form-side | form-side-right | col-12 | col-lg-6">
-
-                        <div class="order-result-item sum order-block-flex">
-                          <div class="text text-blue text-bold order-block-title">ИТОГО:</div>
-                          <div class="text text-orange text-bold result order-block-content" id="final-sum">2284 ₽ </div>
-                        </div>
-
-                      </div>
-
-                    </div>
-
-                  </div>
-                
-                </form>
-              </div>
-              <div class="order-step-3 d-none">
-                <a href="#" class="btn-back close-chat">
-                  <img src="./img/circle-arrow-left.svg" alt=""> 
-                  ВЕРНУТЬСЯ
-                </a>
-                <h1 class="step-title">Укажите способ оплаты</h1>
-
-                <div class="form-block">
-                  <div class="form-option">
-                    <div class="customCheck-item">
-                      <input type="radio" class="customCheck-input" name="order-option-pay" id="order-option-pay-1">
-                      <label class="customCheck-label" for="order-option-pay-1">Оплата наличными</label>
-                    </div>
-                    <div class="option-price">бесплатно</div>
-                  </div>
-                </div>
-
-                <div class="form-block">
-                  <div class="form-option">
-                    <div class="customCheck-item">
-                      <input type="radio" class="customCheck-input" name="order-option-pay" id="order-option-pay-2">
-                      <label class="customCheck-label" for="order-option-pay-2">Оплата картой</label>
-                    </div>
-                    <div class="option-price">2284 ₽</div>
-                  </div>
-                </div>
-
-                <div class="form-footer order-footer">
-
-                  <div class="form-side | col-12">
-
-                    <div class="order-block-flex">
-                      <div class="order-text-gray order-block-title">Стоимость заказа:</div>
-                      <div class="order-text-dark order-text-medium order-text-bold order-block-content">2134 ₽</div>
-                    </div>
-
-                    <div class="order-block-flex">
-                      <div class="order-text-gray order-block-title">Стоимость доставки:</div>
-                      <div class="order-text-dark order-text-medium order-text-bold order-block-content">150 ₽</div>
-                  </div>
-
-                  </div>
-
-                  <div class="form-side | form-side-right | col-12">
-
-                    <div class="order-result-item sum order-block-flex">
-                      <div class="text text-blue text-bold order-block-title">ИТОГО:</div>
-                      <div class="text text-orange text-bold result order-block-content">2284 ₽</div>
-                    </div>
-
-                  </div>
-
-                </div>
-
-              </div>
-
-              <div class="steps">
-                <a href="lk.html#cart" class="step">
-                  <div class="left">01</div>
-                  <div class="right">Выберите<br> товар</div>
-                </a>
-
-                <a href="lk-cart-delivery.html" class="step">
-                  <div class="left">02</div>
-                  <div class="right">Укажите способ <br> доставки</div>
-                </a>
-                
-                <a href="lk-cart-payment.html" class="step step-disabled">
-                  <div class="left">03</div>
-                  <div class="right">Оплата</div>
-                </a>
-
-                <a href="lk-cart-payment.html" class="btn btn-dark">Продолжить</a>
-
-              </div>
-              
             </div>
-          </div>
+
+            <div class="order-text | order-block | order-block-flex | col-12 | d-none">
+                <div class="order-text-gray order-block-title">Скидка 3%:</div>
+                <div class="order-text-dark order-text-medium order-text-bold order-block-content">66 ₽</div>
+            </div>
+
+            <div class="btns | order-coupon | order-block | col-12 | col-lg-7 ">
+                <input type="text" class="set-coupon input" placeholder="ПРИМЕНИТЬ КУПОН">
+                <button class="set-coupon-ico" disabled></button>
+                <!-- <input type="text" class="set-coupon input" disabled placeholder="ПРИМЕНИТЬ КУПОН" value="Jyd45WD">  -->
+                <!-- <button class="set-coupon-ico correct"></button> -->
+                <!-- <div class="text text-dark text-bold correct-coupon-text">Купон успешно применен</div> -->
+            </div>
+
+            <div class="order-block | order-block-flex | col-12 | col-lg-5">
+                <div class="order-text-dark order-text-bold order-text-sum order-block-title">ВЫБРАНО НА СУММУ:</div>
+                <div class="order-cost-sum order-block-content">66 ₽</div>
+            </div>
+
+        </div>
+
+        <button class="button-gift" data-toggle="modal" data-target="#giftModal" type="button">
+            <img src="../img/gift.svg" alt="">ВЫБРАТЬ ПОДАРОК
+        </button>
+
+    </div>
+
+    <div class="order-step-2 ">
+        
+        <a href="#" class="btn-back">
+            <img src="./img/circle-arrow-left.svg" alt=""> 
+            ВЕРНУТЬСЯ
+        </a>
+
+        <h1 class="step-title">Укажите способ доставки</h1>
+        
+        <form action="" class="order-form">
+            
+            <div class="form-block">
+            <div class="form-option">
+                <div class="customCheck-item">
+                <input type="radio" class="customCheck-input" name="order-option" id="order-option-1">
+                <label class="customCheck-label" for="order-option-1">Самовывоз из магазина по адресу:   С-Пб, наб. канала Грибоедова, 70</label>
+                </div>
+                <div class="option-price">бесплатно</div>
+            </div>
+            </div>
+
+            <div class="form-block">
+            <div class="form-option">
+                <div class="customCheck-item">
+                <input type="radio" class="customCheck-input" name="order-option" id="order-option-2">
+                <label class="customCheck-label" for="order-option-2">Заказная бандероль / письмо почтой России (до ближайшего отделения связи) </label>
+                </div>
+                <div class="option-price">150 р.</div>
+            </div>
+
+            <div class="form-option-2 js-hide">
+                <h2 class="form-block-title">Проверьте соответствие адреса доставки</h2>
+                <div class="input">199326, Москва, Шаболовка, 36, кв. 118</div>
+            </div>
+            </div>
+
+            <div class="form-block">
+            <div class="form-option">
+                <div class="customCheck-item">
+                <input type="radio" class="customCheck-input" name="order-option" id="order-option-3">
+                <label class="customCheck-label" for="order-option-3">Отправление I класса почтой России  (ускоренное, до ближайшего отделения связи)</label>
+                </div>
+                <div class="option-price">250 р.</div>
+            </div>
+            </div>
+
+            <div class="form-block-list">
+
+            <h2 class="form-block-title">Курьерская доставка </h2>
+
+            <div class="form-block">
+                <div class="form-option">
+                <div class="customCheck-item">
+                    <input type="radio" class="customCheck-input" name="order-option" id="order-option-4">
+                    <label class="customCheck-label" for="order-option-4">СПб, Лен. обл., Москва, Московская обл.</label>
+                </div>
+                <div class="option-price">500 р.</div>
+                </div>
+            </div>
+
+            <div class="form-block">
+                <div class="form-option">
+                <div class="customCheck-item">
+                    <input type="radio" class="customCheck-input" name="order-option" id="order-option-5">
+                    <label class="customCheck-label" for="order-option-5">Другие регионы РФ</label>
+                </div>
+                <div class="option-price">1000 р.</div>
+                </div>
+            </div>
+
+            </div>
+
+            <div class="form-block">
+            <div class="form-option">
+                <div class="customCheck-item">
+                <input type="radio" class="customCheck-input" name="order-option" id="order-option-6">
+                <label class="customCheck-label" for="order-option-6">Доставка за границу или другие варианты,  требующие индивидуального рассмотрения</label>
+                </div>
+                <!-- <div class="option-price">250 р.</div> -->
+            </div>
+            <span class="form-block-description">* Обращаем внимание, что обсудить доставку возможно только в будние дни с 10 : 00 до 19 : 00 по Московскому времени</span>
+            
+            </div>
+
+            <div class="form-block-list">
+
+            <h2 class="form-block-title form-block-title-big">Страхование отправления</h2>
+
+            <div class="form-option">
+                <div class="customCheck-item">
+                <input type="checkbox" class="customCheck-input" name="order-option-7" id="order-option-7" disabled>
+                <label class="customCheck-label" for="order-option-7">Застраховать на сумму (3 %)</label>
+                <div id="insure" class="input"></div>
+                </div>
+                <div class="option-price">180 р.</div>
+            </div>
+
+            <div class="form-footer order-footer">
+
+                <div class="form-side | col-12 | col-lg-6">
+                <h2 class="form-block-title">Комментарий к заказу (если имеется)</h2>
+                <textarea name="order-option-8" id="order-option-8" class="input textarea"></textarea>
+                </div>
+
+                <div class="form-side | col-12 | col-lg-6">
+
+                <div class="order-block-flex">
+                    <div class="order-text-gray order-block-title">Стоимость заказа:</div>
+                    <div class="order-text-dark order-text-medium order-text-bold order-block-content">2134 ₽</div>
+                </div>
+
+                <div class="order-block-flex">
+                    <div class="order-text-gray order-block-title">Стоимость доставки:</div>
+                    <div class="order-text-dark order-text-medium order-text-bold order-block-content">150 ₽</div>
+                </div>
+
+                </div>
+
+                <div class="form-side | col-12 | col-lg-6">
+
+                <div class="order-text-dark | d-lg-block | order-text-big | d-none | order-text-bold | order-block ">
+                    ВЫБРАНО ТОВАРОВ: <span class="order-text-check-number">0</span>
+                </div>
+
+                </div>
+
+                <div class="form-side | form-side-right | col-12 | col-lg-6">
+
+                <div class="order-result-item sum order-block-flex">
+                    <div class="text text-blue text-bold order-block-title">ИТОГО:</div>
+                    <div class="text text-orange text-bold result order-block-content" id="final-sum">2284 ₽ </div>
+                </div>
+
+                </div>
+
+            </div>
+
+            </div>
+        
+        </form>
+
+    </div>
+
+    <div class="order-step-3 d-none">
+        <a href="#" class="btn-back">
+            <img src="./img/circle-arrow-left.svg" alt=""> 
+            ВЕРНУТЬСЯ
+        </a>
+        <h1 class="step-title">Укажите способ оплаты</h1>
+
+        <div class="form-block">
+            <div class="form-option">
+            <div class="customCheck-item">
+                <input type="radio" class="customCheck-input" name="order-option-pay" id="order-option-pay-1">
+                <label class="customCheck-label" for="order-option-pay-1">Оплата наличными</label>
+            </div>
+            <div class="option-price">бесплатно</div>
+            </div>
+        </div>
+
+        <div class="form-block">
+            <div class="form-option">
+            <div class="customCheck-item">
+                <input type="radio" class="customCheck-input" name="order-option-pay" id="order-option-pay-2">
+                <label class="customCheck-label" for="order-option-pay-2">Оплата картой</label>
+            </div>
+            <div class="option-price">2284 ₽</div>
+            </div>
+        </div>
+
+        <div class="form-footer order-footer">
+
+            <div class="form-side | col-12">
+
+                <div class="order-block-flex">
+                    <div class="order-text-gray order-block-title">Стоимость заказа:</div>
+                    <div class="order-text-dark order-text-medium order-text-bold order-block-content">2134 ₽</div>
+                </div>
+
+                <div class="order-block-flex">
+                    <div class="order-text-gray order-block-title">Стоимость доставки:</div>
+                    <div class="order-text-dark order-text-medium order-text-bold order-block-content">150 ₽</div>
+                </div>
+
+            </div>
+
+            <div class="form-side | form-side-right | col-12">
+
+                <div class="order-result-item sum order-block-flex">
+                    <div class="text text-blue text-bold order-block-title">ИТОГО:</div>
+                    <div class="text text-orange text-bold result order-block-content">2284 ₽</div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="steps ">
+
+        <a href="lk-cart.html" class="step">
+            <div class="left">01</div>
+            <div class="right">Выберите<br> товар</div>
+        </a>
+
+        <a href="lk-cart-delivery.html" class="step ">
+            <div class="left">02</div>
+            <div class="right">Укажите способ <br> доставки</div>
+        </a>
+        
+        <a href="lk-cart-payment.html" class="step step-disabled">
+            <div class="left">03</div>
+            <div class="right">Оплата</div>
+        </a>
+
+        <a href="lk-cart-payment.html" class="btn btn-dark">Продолжить</a>
+
+    </div>
+
+</form>
+
         </div>
       </div>
     </div>
-
 
   </div>
 
@@ -1787,14 +841,13 @@
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
         </button>
       </div>
-      <div class="modal-body">
+      <form class="modal-body">
         <ul>
           <li>
             <div class="el">
               <div class="right">
                 <div class="customCheck-item">
                   <input type="radio" class="customCheck-input" name="gift" id="gift-1">
-                  <!-- <label class="customCheck-label" for="gift-1"></label> -->
                   <label for="gift-1" class="customCheck-label">
                     <div class="el-item-img">
                       <img src="../img/mark.jpg" alt="">
