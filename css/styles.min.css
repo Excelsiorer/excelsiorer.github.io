@@ -11986,7 +11986,7 @@ button.swiper-pagination-bullet {
 .header .currency .currency-list li i,
 .header__bar .user li .notification,
 .header__bar .user li .submenu li i,
-.mobile-menu ul li a i,
+.mobile-menu ul li .with-submenu i,
 .post .btn,
 .post .img-wrapper,
 .posts-slider .wrapper .navigation .new-button-next,
@@ -12701,11 +12701,22 @@ textarea:focus {
   font-size: 18px;
   font-family: Montserrat-SemiBold,sans-serif
 }
-.mobile-menu ul li a:active,
-.mobile-menu ul li a:hover {
+.mobile-menu ul li .with-submenu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  color: #0e5c83;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-size: 18px;
+  font-family: Montserrat-SemiBold,sans-serif
+}
+.mobile-menu ul li .with-submenu:active,
+.mobile-menu ul li .with-submenu:hover {
   text-decoration: none
 }
-.mobile-menu ul li a i {
+.mobile-menu ul li .with-submenu i {
   position: absolute;
   width: 30px;
   height: 30px;
@@ -12718,7 +12729,7 @@ textarea:focus {
   transition: transform .2s ease-in-out;
   transition: transform .2s ease-in-out,-webkit-transform .2s ease-in-out
 }
-.mobile-menu ul li a i.active {
+.mobile-menu ul li .with-submenu i.active {
   -webkit-transform: rotate(180deg);
   -ms-transform: rotate(180deg);
   transform: rotate(180deg)
@@ -16225,6 +16236,38 @@ footer {
   }
 }
 @media (max-width:576px) {
+  .lkTabs .lkTabs-link {
+    font-size: 12px;
+    -ms-flex-preferred-size: 48%;
+    flex-basis: 48%
+  }
+  .order.product .order-item-title {
+    font-size: 12px
+  }
+  .steps .step .left {
+    font-size: 25px
+  }
+  .steps .step .right {
+    font-size: 12px
+  }
+  .messages-list .messages .message-item .message-title {
+    font-size: 12px
+  }
+  .dark-pane {
+    font-size: 12px
+  }
+  .order-result-list {
+    width: 80%
+  }
+  .modal-gift .modal-dialog {
+    max-width: 90%
+  }
+  .modal-gift .modal-body {
+    padding: 0 10px 10px 10px
+  }
+  .el .el-item-title {
+    font-size: 12px
+  }
   body {
     font-size: 14px
   }
