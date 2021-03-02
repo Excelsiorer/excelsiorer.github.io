@@ -15249,10 +15249,21 @@ main .main-banner img {
   -ms-flex-align: center;
   align-items: center
 }
+.filter.sort-desc {
+  background-color: #f5f6f6;
+  border-radius: 5px;
+  padding: 0
+}
 .filter.sort-desc .filter-img {
   -webkit-transform: rotate(180deg);
   -ms-transform: rotate(180deg);
-  transform: rotate(180deg)
+  transform: rotate(180deg);
+  background-image: url(../img/small-dark-arrow-top.svg)
+}
+.filter.sort-desc a {
+  color: #004666;
+  padding-top: 8px;
+  padding-bottom: 8px
 }
 .filter .filter-control {
   display: none
@@ -15266,7 +15277,7 @@ main .main-banner img {
   margin: 0;
   width: 100%
 }
-.filter .filter-label a {
+.filter a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -15285,18 +15296,8 @@ main .main-banner img {
   -ms-flex-pack: center;
   justify-content: center
 }
-.filter .filter-label a:hover {
+.filter a:hover {
   text-decoration: none
-}
-.filter-price {
-  background-color: #f5f6f6;
-  border-radius: 5px;
-  padding: 0
-}
-.filter-price .filter-label a {
-  color: #004666;
-  padding-top: 8px;
-  padding-bottom: 8px
 }
 .filter-date,
 .filter-price {
@@ -15513,16 +15514,19 @@ main .main-banner img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: start;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  margin-top: 30px
+  margin-top: 30px;
+  margin-left: -5px;
+  margin-right: -5px
 }
 .products .product {
   width: calc(25% - 10px);
-  margin-bottom: 25px
+  margin-bottom: 25px;
+  margin: 0 5px 25px 5px
 }
 input::-webkit-inner-spin-button,
 input::-webkit-outer-spin-button {
