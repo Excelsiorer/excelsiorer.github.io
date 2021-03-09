@@ -12136,6 +12136,9 @@ button.swiper-pagination-bullet {
 .icon-youtube:before {
   content: "\E01F"
 }
+.swiper-slide {
+  height: auto
+}
 .gallery-top {
   height: 200px;
   width: 100%;
@@ -12956,13 +12959,14 @@ main .main-banner img {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  -webkit-box-pack: start;
-  -ms-flex-pack: start;
-  justify-content: flex-start;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
   overflow: hidden;
   border-radius: 5px;
   border: 1px solid #f5f6f6;
-  padding-bottom: 10px
+  padding-bottom: 10px;
+  height: 100%
 }
 .product:hover .add-to-favorite {
   left: 15px
@@ -12981,7 +12985,8 @@ main .main-banner img {
   height: 200px;
   width: 100%;
   background: #f5f6f6;
-  overflow: hidden
+  overflow: hidden;
+  margin-bottom: auto
 }
 .product .img-wrapper img {
   position: absolute;
@@ -13058,7 +13063,8 @@ main .main-banner img {
   font-family: Montserrat-SemiBold,sans-serif;
   font-weight: 600;
   -o-text-overflow: clip;
-  text-overflow: clip
+  text-overflow: clip;
+  overflow: hidden
 }
 .product .params {
   display: -webkit-box;
@@ -13129,8 +13135,7 @@ main .main-banner img {
   -webkit-box-align: end;
   -ms-flex-align: end;
   align-items: flex-end;
-  font-family: Montserrat-SemiBold,sans-serif;
-  margin-top: auto
+  font-family: Montserrat-SemiBold,sans-serif
 }
 .product .price .wrapper {
   display: -webkit-box;
@@ -13222,10 +13227,15 @@ main .main-banner img {
   -webkit-box-pack: start;
   -ms-flex-pack: start;
   justify-content: flex-start;
-  padding-bottom: 0
+  padding-bottom: 0;
+  padding-right: 15px
 }
 .products.horizon .product:hover .fast-view {
   opacity: 1
+}
+.products.horizon .product .discount {
+  top: 5px;
+  right: 5px
 }
 .products.horizon .product .title {
   width: 85%
@@ -13429,7 +13439,8 @@ main .main-banner img {
   border-radius: 5px;
   padding: 7px 15px 7px 41px;
   height: 29px;
-  width: 119px
+  width: 119px;
+  line-height: 19px
 }
 .search .search-two-fields {
   display: -webkit-box;
@@ -13599,6 +13610,9 @@ main .main-banner img {
   -ms-flex-wrap: wrap;
   flex-wrap: wrap
 }
+.customCheck-list .customCheck-item:last-child .customCheck-input + .customCheck-label::before {
+  top: calc(-25px / 3)
+}
 .customCheck-item {
   margin-bottom: 20px;
   height: 30px;
@@ -13652,7 +13666,7 @@ main .main-banner img {
   background-repeat: no-repeat;
   position: absolute;
   top: auto;
-  left: 4px;
+  left: 3px;
   border-radius: 100%;
   -webkit-transition: all .2s ease;
   -o-transition: all .2s ease;
@@ -14860,7 +14874,7 @@ main .main-banner img {
   background-color: #004666;
   border-radius: 50%;
   top: auto;
-  left: 4px
+  left: 3.5px
 }
 .form-option .customCheck-item .customCheck-input:checked + .customCheck-label:before {
   border-color: rgba(0,0,0,.1);
@@ -15184,20 +15198,34 @@ main .main-banner img {
 }
 .blog-posts {
   margin: 0;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: start;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-top: 30px;
+  margin-left: -5px;
+  margin-right: -5px
 }
 .blog-posts .post {
   padding-left: 0;
   padding-right: 0;
-  margin-right: 0;
-  margin-bottom: 20px;
-  width: calc(25% - 10px)
+  width: calc(25% - 10px);
+  margin-bottom: 25px;
+  margin: 0 5px 25px 5px;
+  height: auto
 }
 .post {
   border: 1px solid #f5f6f6;
-  border-radius: 5px
+  border-radius: 5px;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column
 }
 .post .img-wrapper {
   position: relative;
@@ -15526,7 +15554,8 @@ main .main-banner img {
 .products .product {
   width: calc(25% - 10px);
   margin-bottom: 25px;
-  margin: 0 5px 25px 5px
+  margin: 0 5px 25px 5px;
+  height: auto
 }
 input::-webkit-inner-spin-button,
 input::-webkit-outer-spin-button {
@@ -15638,7 +15667,9 @@ input[type=number] {
   color: #0e5c83;
   text-align: center;
   padding-left: 10px;
-  padding-right: 10px
+  padding-right: 10px;
+  margin-bottom: auto;
+  margin-top: auto
 }
 .post .btn {
   width: 100%;
@@ -15763,6 +15794,9 @@ footer {
 .footer-bottom .contacts img {
   margin-right: 5px;
   width: 25px
+}
+.lg-backdrop {
+  z-index: 1050
 }
 @media (max-width:1600px) {
   .modal-dialog {
@@ -15966,7 +16000,7 @@ footer {
   .search .search-submit::before {
     width: 16px;
     height: 18px;
-    top: 10px
+    top: 6px
   }
   .search .search-submit input {
     font-size: 18px
@@ -16411,9 +16445,6 @@ footer {
   }
   .product:hover .fast-view {
     display: none
-  }
-  .product:hover .buy-btn {
-    background-color: #fff
   }
   .product .price {
     -webkit-box-pack: center;
