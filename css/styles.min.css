@@ -15340,8 +15340,18 @@ main .main-banner img {
   padding-top: 8px;
   padding-bottom: 8px
 }
+.filter.sort-asc {
+  background-color: #f5f6f6;
+  border-radius: 5px;
+  padding: 0
+}
 .filter.sort-asc .filter-img {
-  background-image: url(../img/small-arrow-top.svg)
+  background-image: url(../img/small-dark-arrow-top.svg)
+}
+.filter.sort-asc a {
+  color: #004666;
+  padding-top: 8px;
+  padding-bottom: 8px
 }
 .filter .filter-control {
   display: none
