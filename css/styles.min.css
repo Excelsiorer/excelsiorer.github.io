@@ -12414,16 +12414,16 @@ textarea:focus {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: end;
-  -ms-flex-align: end;
-  align-items: flex-end
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center
 }
 .header__bar .user li a:hover {
   color: #fff;
   text-decoration: none
 }
 .header__bar .user li:nth-child(1) {
-  margin-right: 30px
+  margin-right: 20px
 }
 .header__bar .user li i.icon-user {
   font-size: 23px
@@ -12443,12 +12443,17 @@ textarea:focus {
   font-style: normal
 }
 .header__bar .user li span {
-  margin-left: 15px
+  margin-left: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex
 }
 .header__bar .user li span.price {
-  margin-left: 5px;
-  font-family: Montserrat-Bold,sans-serif;
-  font-size: 18px
+  margin-left: 10px;
+  font-family: Roboto-Regular,sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 1px
 }
 .header__bar .user li span.price i {
   font-size: 14px
@@ -13066,7 +13071,7 @@ main .main-banner img {
 .product .title {
   padding-left: 10px;
   padding-right: 10px;
-  font-size: 12px;
+  font-size: 14px;
   padding-top: 15px;
   color: #004666;
   font-family: Montserrat-SemiBold,sans-serif;
@@ -15286,7 +15291,7 @@ main .main-banner img {
   left: auto;
   top: 0;
   height: 100%;
-  width: 90%;
+  width: 100%;
   -o-object-fit: contain;
   object-fit: contain
 }
@@ -15300,6 +15305,11 @@ main .main-banner img {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between
+}
+.dark-pane .pagination-section:last-child {
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end
 }
 .show-type {
   padding: 0;
@@ -15692,13 +15702,18 @@ input[type=number] {
   color: #004666;
   font-size: 14px
 }
-.article-text {
+.article-body {
+  margin-top: 40px
+}
+.article-text p {
   color: #004666;
   font-size: 14px;
-  line-height: 21px
+  line-height: 21px;
+  padding-top: 40px;
+  padding-bottom: 5px
 }
-.article-cover {
-  margin: 40px 0
+.article-text p + p {
+  padding-top: 5px
 }
 .article-img {
   width: 100%;
@@ -15757,7 +15772,8 @@ input[type=number] {
   font-family: Montserrat-SemiBold,sans-serif;
   -webkit-transition: background .2s ease-in-out;
   -o-transition: background .2s ease-in-out;
-  transition: background .2s ease-in-out
+  transition: background .2s ease-in-out;
+  font-size: 14px
 }
 .post .btn:hover {
   text-decoration: none;
