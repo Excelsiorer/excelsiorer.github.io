@@ -12142,6 +12142,14 @@ button.swiper-pagination-bullet {
 .icon-youtube:before {
   content: "\E020"
 }
+.icon-ruble {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center
+}
 .swiper-slide {
   height: auto
 }
@@ -12456,7 +12464,8 @@ textarea:focus {
   letter-spacing: 1px
 }
 .header__bar .user li span.price i {
-  font-size: 14px
+  font-size: 14px;
+  margin-right: 5px
 }
 .header__bar .user li .notification {
   position: absolute;
@@ -14032,6 +14041,16 @@ main .main-banner img {
   text-align: center;
   padding: 8px
 }
+.btn:focus {
+  outline: 0;
+  -webkit-box-shadow: none;
+  box-shadow: none
+}
+.btn:focus:active {
+  outline: 0;
+  -webkit-box-shadow: none;
+  box-shadow: none
+}
 .btn.btn-empty {
   background-color: #fff;
   color: #0e5c83;
@@ -14047,6 +14066,13 @@ main .main-banner img {
 }
 .btn.btn-dark:hover {
   color: #fff
+}
+.btn-dark:not(:disabled):not(.disabled):active {
+  background-color: #0e5c83
+}
+.btn-dark:not(:disabled):not(.disabled):active:focus {
+  -webkit-box-shadow: none;
+  box-shadow: none
 }
 .header__bar .subform {
   display: none;
@@ -15590,7 +15616,8 @@ main .main-banner img {
   background-color: #d9e8f5
 }
 .categories .categories-link:hover {
-  background-color: #d9e8f5
+  background-color: #d9e8f5;
+  text-decoration: none
 }
 .categories .categories-link:last-child {
   border-right: none
@@ -15887,7 +15914,8 @@ footer {
   width: 25px
 }
 .lg-backdrop {
-  z-index: 1050
+  z-index: 1050;
+  background-color: rgba(0,0,0,.7)
 }
 .lot-sold-delete,
 .price-wrapper-title {
