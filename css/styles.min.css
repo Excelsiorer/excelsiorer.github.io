@@ -13000,9 +13000,6 @@ main .main-banner img {
 .product:hover .buy-btn i {
   color: #fff!important
 }
-.product:hover .price .buy-btn span {
-  opacity: 1
-}
 .product .img-wrapper {
   position: relative;
   height: 200px;
@@ -13216,9 +13213,6 @@ main .main-banner img {
 .product .price .buy-btn:hover {
   background: rgba(14,92,131,.8);
   text-decoration: none
-}
-.product .price .buy-btn:hover span {
-  display: block
 }
 .product .price .buy-btn span {
   font-size: 1em;
@@ -16014,6 +16008,20 @@ footer {
     padding-top: 0
   }
 }
+@media (min-width:992px) {
+  .product:hover .price .price-params-container {
+    width: 95%
+  }
+  .product:hover .price .buy-btn {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center
+  }
+  .product:hover .price .buy-btn span {
+    display: block;
+    opacity: 1
+  }
+}
 @media (max-width:992px) {
   .cart-list .customCheck-item .customCheck-input:checked + .customCheck-label:after,
   .cart-list .customCheck-item .customCheck-input:not(:checked) + .customCheck-label:after {
@@ -16595,6 +16603,17 @@ footer {
   .single-product.product .params.params-main li span {
     font-size: 16px
   }
+  .product .price-params-container {
+    position: static;
+    -ms-flex-preferred-size: auto;
+    flex-basis: auto;
+    margin-right: 10px;
+    flex-basis: auto
+  }
+  .product .buy-btn span {
+    opacity: 0;
+    display: none
+  }
 }
 @media (max-width:768px) {
   .right {
@@ -16646,6 +16665,14 @@ footer {
     position: absolute;
     top: -15px;
     left: 0
+  }
+  .product .price-params-container {
+    -ms-flex-preferred-size: auto!important;
+    flex-basis: auto!important;
+    margin-right: 0
+  }
+  .product .buy-btn span {
+    display: none
   }
   .product .title {
     text-align: center
