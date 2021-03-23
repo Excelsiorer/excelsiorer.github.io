@@ -14945,7 +14945,7 @@ main .main-banner img {
   background-color: #004666;
   border-radius: 50%;
   top: auto;
-  left: 3.5px
+  left: 4px
 }
 .form-option .customCheck-item .customCheck-input:checked + .customCheck-label:before {
   border-color: rgba(0,0,0,.1);
@@ -15148,8 +15148,9 @@ main .main-banner img {
   width: 20px;
   height: 20px;
   background-image: url(../img/check.svg);
-  top: auto;
-  left: 0
+  top: -9px;
+  left: 2%;
+  background-size: auto
 }
 .msg.err {
   font-size: 38px;
@@ -15966,6 +15967,7 @@ footer {
   -ms-transform: scale(1);
   transform: scale(1);
   opacity: 1;
+  left: 0!important;
   background-image: url(../img/light_cross.svg)!important
 }
 .cart-list .order-item.disabled.sold .order-item-price {
@@ -16009,15 +16011,20 @@ footer {
   }
 }
 @media (min-width:992px) {
-  .product:hover .price .price-params-container {
+  .product:not(.order.product):hover .price .price-wrapper {
+    opacity: 0
+  }
+  .product:not(.order.product):hover .price .price-params-container {
+    left: 2.5%;
+    right: 2.5%;
     width: 95%
   }
-  .product:hover .price .buy-btn {
+  .product:not(.order.product):hover .price .buy-btn {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center
   }
-  .product:hover .price .buy-btn span {
+  .product:not(.order.product):hover .price .buy-btn span {
     display: block;
     opacity: 1
   }
