@@ -13236,6 +13236,9 @@ main .main-banner img {
 .price-params-container .add-to-favorite {
   display: none
 }
+.price-params-container .fast-view {
+  display: none
+}
 .products.horizon .product {
   width: 100%;
   -webkit-box-orient: horizontal;
@@ -13336,27 +13339,32 @@ main .main-banner img {
 .products.horizon .product .img-wrapper .add-to-favorite {
   display: none
 }
+.products.horizon .product .img-wrapper .fast-view {
+  display: none
+}
 .products.horizon .product .img-wrapper img {
   width: 100%;
   margin: 0 auto;
   left: 0;
   right: 0
 }
-.products.horizon .product .fast-view {
-  opacity: 0;
-  width: 36px;
-  height: 36px;
+.products.horizon .product .price-params-container .fast-view {
+  opacity: 1;
+  display: block;
+  position: static;
+  margin-right: 10px;
+  width: 35px;
+  height: 35px;
   border-radius: 5px;
-  left: auto;
-  right: auto;
-  top: auto;
-  bottom: auto
+  background: #0e5c83
 }
-.products.horizon .product .fast-view span {
+.products.horizon .product .price-params-container .fast-view span {
   display: none
 }
-.products.horizon .product .fast-view i {
-  margin: 0
+.products.horizon .product .price-params-container .fast-view i {
+  margin: 0;
+  position: relative;
+  top: 2px
 }
 .products.horizon .product .price {
   margin-top: 0;
@@ -13375,6 +13383,9 @@ main .main-banner img {
 .products.horizon .product .price .buy-btn {
   margin-right: 10px;
   height: 35px
+}
+.products.horizon .product .price .buy-btn span {
+  opacity: 1
 }
 .products.horizon .product .price .buy-btn i {
   font-size: 17px
@@ -14755,7 +14766,7 @@ main .main-banner img {
 .el .right .customCheck-item .customCheck-input:checked + .customCheck-label:before,
 .el .right .customCheck-item .customCheck-input:not(:checked) + .customCheck-label:before {
   width: 20px;
-  height: 18px;
+  height: 20px;
   left: -45px;
   top: 25%
 }
@@ -14766,7 +14777,7 @@ main .main-banner img {
   background-color: #004666;
   background-image: none;
   left: calc(-45px + 6px);
-  top: calc(25% + 5px)
+  top: calc(25% + 7px)
 }
 .el .el-item-img {
   width: 68px;
@@ -14967,7 +14978,8 @@ main .main-banner img {
   transform: scale(0)
 }
 .customCheck-item input:disabled + .customCheck-label {
-  opacity: .5
+  opacity: .5;
+  cursor: not-allowed
 }
 .stamp-type {
   background-size: contain;
@@ -16011,20 +16023,37 @@ footer {
   }
 }
 @media (min-width:992px) {
-  .product:not(.order.product):hover .price .price-wrapper {
+  .product:not(.order.product):not(.single-product):hover .price .price-wrapper {
     opacity: 0
   }
-  .product:not(.order.product):hover .price .price-params-container {
+  .product:not(.order.product):not(.single-product):hover .price .price-params-container {
     left: 2.5%;
     right: 2.5%;
     width: 95%
   }
-  .product:not(.order.product):hover .price .buy-btn {
+  .product:not(.order.product):not(.single-product):hover .price .buy-btn {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center
   }
-  .product:not(.order.product):hover .price .buy-btn span {
+  .product:not(.order.product):not(.single-product):hover .price .buy-btn span {
+    display: block;
+    opacity: 1
+  }
+  .products.horizon .product:hover .price .price-wrapper {
+    opacity: 1!important
+  }
+  .products.horizon .product:hover .price .price-params-container {
+    left: 2.5%;
+    right: 2.5%;
+    width: 100%!important
+  }
+  .products.horizon .product:hover .price .buy-btn {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center
+  }
+  .products.horizon .product:hover .price .buy-btn span {
     display: block;
     opacity: 1
   }
@@ -16623,6 +16652,13 @@ footer {
   }
 }
 @media (max-width:768px) {
+  .cart-list .order-item.disabled .order-item-price,
+  .cart-list .order-item.disabled.sold .order-item-price {
+    width: 30%
+  }
+  .cart-list .order-item.disabled .price-wrapper {
+    white-space: normal
+  }
   .right {
     position: relative
   }
@@ -16671,7 +16707,7 @@ footer {
   .favorits .delete-from-cart {
     position: absolute;
     top: -15px;
-    left: 0
+    left: -15px
   }
   .product .price-params-container {
     -ms-flex-preferred-size: auto!important;
