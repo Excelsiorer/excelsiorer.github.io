@@ -12250,7 +12250,8 @@ textarea:focus {
 .banner-top {
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex
+  display: flex;
+  position: relative
 }
 .banner-top .banner-top-link {
   -webkit-box-pack: center;
@@ -12270,8 +12271,8 @@ textarea:focus {
 .banner-top .banner-top-img {
   height: 100%;
   width: 100%;
-  -o-object-fit: contain;
-  object-fit: contain;
+  -o-object-fit: cover;
+  object-fit: cover;
   position: absolute;
   z-index: 1
 }
@@ -12280,8 +12281,8 @@ textarea:focus {
 }
 .banner-top .icon-close {
   position: absolute;
-  top: 15px;
-  right: 20px;
+  top: 22px;
+  right: 22px;
   color: #a6a6a6;
   cursor: pointer;
   -webkit-transition: .2s ease-in-out;
@@ -12447,7 +12448,7 @@ textarea:focus {
 .header__bar .user li i.icon-cart .notification {
   top: -5px;
   right: -8px;
-  font-size: 16px;
+  font-size: 13px;
   font-style: normal
 }
 .header__bar .user li span {
@@ -12475,7 +12476,8 @@ textarea:focus {
   height: 18px;
   font-family: Montserrat-Medium,sans-serif;
   border-radius: 50%;
-  background: #f26101
+  background: #f26101;
+  font-size: 13px
 }
 .header__bar .user li:hover .submenu {
   opacity: 1;
@@ -12511,6 +12513,9 @@ textarea:focus {
 .header__bar .user li .submenu li:hover {
   background: #f5f6f6
 }
+.header__bar .user li .submenu li:hover a.active {
+  background-color: transparent
+}
 .header__bar .user li .submenu li a {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -12524,6 +12529,9 @@ textarea:focus {
   margin-right: 0;
   border-bottom: 1px solid #e9e9e9;
   color: #000
+}
+.header__bar .user li .submenu li a.active {
+  background-color: #e1f4fd
 }
 .header__bar .user li .submenu li a:hover {
   text-decoration: none
@@ -12551,7 +12559,8 @@ textarea:focus {
   top: 0;
   right: 0;
   margin-left: auto;
-  color: #fff
+  color: #fff;
+  font-size: 13px
 }
 .header .currency {
   display: -webkit-box;
@@ -12815,6 +12824,7 @@ aside ul li a {
   font-family: Montserrat-Regular,sans-serif;
   font-weight: 600;
   padding: 18px;
+  padding-right: 0;
   border-bottom: 1px solid #8b8b8b
 }
 aside ul li a:hover {
@@ -13018,6 +13028,7 @@ main .main-banner img {
   object-fit: contain
 }
 .product .add-to-favorite {
+  display: none;
   position: absolute;
   top: 15px;
   left: -35px;
@@ -13169,7 +13180,8 @@ main .main-banner img {
 }
 .product .price .new,
 .product .price .old {
-  line-height: 1.1
+  line-height: 1.1;
+  white-space: nowrap
 }
 .product .price .old {
   display: inline-block;
@@ -13510,9 +13522,6 @@ main .main-banner img {
 .search-right .customCheck-list {
   margin-top: 0
 }
-.search-right .customCheck-list .customCheck-item:last-child .customCheck-label:after {
-  top: -40%
-}
 .search-right .search-two-fields label span {
   width: 100%
 }
@@ -13653,7 +13662,7 @@ main .main-banner img {
   flex-wrap: wrap
 }
 .customCheck-list .customCheck-item:last-child .customCheck-input + .customCheck-label::before {
-  top: calc(-25px / 3)
+  top: auto
 }
 .customCheck-item {
   margin-bottom: 20px;
@@ -13668,7 +13677,7 @@ main .main-banner img {
 .customCheck-item .customCheck-label {
   color: #004666;
   font-size: 14px;
-  padding-left: 47px;
+  padding-left: 38px;
   margin: 0;
   position: relative;
   cursor: pointer;
@@ -13695,20 +13704,17 @@ main .main-banner img {
   border: 1px solid rgba(75,131,158,.5);
   border-radius: 5px;
   background: #fff;
-  top: calc(-30px / 3)
+  top: auto
 }
 .customCheck-item .customCheck-input:checked + .customCheck-label:after,
 .customCheck-item .customCheck-input:not(:checked) + .customCheck-label:after {
   content: '';
-  width: 20px;
-  height: 25px;
-  background-image: url(../img/checked.svg);
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat;
+  width: 15px;
+  height: 15px;
+  background-color: #004666;
   position: absolute;
-  top: -65%;
-  left: 5px;
+  top: auto;
+  left: 7.5px;
   border-radius: 100%;
   -webkit-transition: all .2s ease;
   -o-transition: all .2s ease;
@@ -14254,13 +14260,17 @@ main .main-banner img {
 .lkTabs .lkTabs-link i::before {
   line-height: 20px
 }
+.lkTabs .lkTabs-link i.icon-exit::before {
+  color: #54a2c8!important
+}
 .lkTabs .lkTabs-link .notification {
   background-color: #f26101;
   color: #fff;
   border-radius: 50%;
   width: 19px;
   height: 19px;
-  text-align: center
+  text-align: center;
+  font-size: 13px
 }
 .success-order .success-order-msg {
   margin-top: 40px;
@@ -14278,20 +14288,57 @@ main .main-banner img {
   width: 221px;
   height: 33px;
   font-size: 14px;
-  line-height: 14px
+  line-height: 14px;
+  padding: 0;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center
 }
 .delete-message {
   width: 126px;
   height: 33px;
-  margin-left: 20px
+  margin-left: 20px;
+  padding: 0;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center
 }
 .delete-message:disabled {
   cursor: not-allowed
 }
 .chat-messages-list {
   margin-top: 40px;
-  max-height: 80vh;
-  overflow-y: auto
+  max-height: 60vh;
+  overflow-y: auto;
+  padding: 0 20px;
+  scrollbar-width: thin;
+  scrollbar-color: #afafaf transparent
+}
+.chat-messages-list::-webkit-scrollbar {
+  width: 5px;
+  height: 5px
+}
+.chat-messages-list::-webkit-scrollbar-button {
+  display: none
+}
+.chat-messages-list::-webkit-scrollbar-track {
+  background: 0 0
+}
+.chat-messages-list::-webkit-scrollbar-thumb {
+  background: #afafaf;
+  border-radius: 5px
 }
 .messages-list {
   margin-bottom: 25px
@@ -14341,15 +14388,18 @@ main .main-banner img {
   left: auto;
   width: 20px;
   height: 20px;
-  top: 0;
+  top: auto;
   margin-bottom: 0
 }
 .messages-list .messages .message-item .customCheck-item .customCheck-input:checked + .customCheck-label:after,
 .messages-list .messages .message-item .customCheck-item .customCheck-input:not(:checked) + .customCheck-label:after {
-  width: 15px;
-  height: 15px;
-  top: 3px;
-  left: 10px
+  width: 10px;
+  height: 10px;
+  top: auto;
+  left: 12px
+}
+.messages-list .messages .message-item .customCheck-item {
+  margin-bottom: 0
 }
 .messages-list .messages .message-item .avatar {
   margin-right: 20px
@@ -14768,7 +14818,7 @@ main .main-banner img {
   width: 20px;
   height: 20px;
   left: -45px;
-  top: 25%
+  top: auto
 }
 .el .right .customCheck-item .customCheck-input:checked + .customCheck-label:after,
 .el .right .customCheck-item .customCheck-input:not(:checked) + .customCheck-label:after {
@@ -14776,8 +14826,8 @@ main .main-banner img {
   height: 7px;
   background-color: #004666;
   background-image: none;
-  left: calc(-45px + 6px);
-  top: calc(25% + 7px)
+  left: -38px;
+  top: auto
 }
 .el .el-item-img {
   width: 68px;
@@ -14892,9 +14942,6 @@ main .main-banner img {
   display: inline-block;
   margin-bottom: 20px
 }
-.js-hide {
-  display: none
-}
 .form-block-list {
   border-bottom: 1px solid #8b8b8b
 }
@@ -14980,6 +15027,9 @@ main .main-banner img {
 .customCheck-item input:disabled + .customCheck-label {
   opacity: .5;
   cursor: not-allowed
+}
+.customCheck-item input:disabled + .customCheck-label::after {
+  background-color: transparent!important
 }
 .stamp-type {
   background-size: contain;
@@ -15157,11 +15207,10 @@ main .main-banner img {
 }
 .cart-list .customCheck-item .customCheck-input:checked + .customCheck-label:after,
 .cart-list .customCheck-item .customCheck-input:not(:checked) + .customCheck-label:after {
-  width: 20px;
-  height: 20px;
+  width: 12px;
+  height: 12px;
   background-image: url(../img/check.svg);
-  top: -9px;
-  left: 2%;
+  left: 4px;
   background-size: auto
 }
 .msg.err {
@@ -15468,11 +15517,11 @@ main .main-banner img {
   background-repeat: no-repeat;
   display: block
 }
-.page-prev {
+.page-prev .page-link {
   background-image: url(../img/arrow-left.svg);
   margin-right: 7px
 }
-.page-next {
+.page-next .page-link {
   background-image: url(../img/arrow-right.svg);
   margin-left: 7px
 }
@@ -15980,6 +16029,11 @@ footer {
   transform: scale(1);
   opacity: 1;
   left: 0!important;
+  background-position: center;
+  background-size: cover;
+  background-position: center;
+  width: 20px!important;
+  height: 20px!important;
   background-image: url(../img/light_cross.svg)!important
 }
 .cart-list .order-item.disabled.sold .order-item-price {
@@ -16110,7 +16164,7 @@ footer {
   }
   .header__bar .user li .submenu {
     left: unset;
-    right: -85px
+    right: -360%
   }
   .header__bar form {
     -webkit-box-pack: start;
@@ -16652,6 +16706,24 @@ footer {
   }
 }
 @media (max-width:768px) {
+  .chat-message {
+    margin-bottom: 20px
+  }
+  .chat-message .date {
+    bottom: -10px;
+    top: auto!important
+  }
+  .new-message {
+    width: 245px;
+    height: 45px
+  }
+  .delete-message {
+    width: 142px;
+    height: 45px
+  }
+  .product .params {
+    display: none
+  }
   .cart-list .order-item.disabled .order-item-price,
   .cart-list .order-item.disabled.sold .order-item-price {
     width: 30%
@@ -16810,5 +16882,149 @@ footer {
 @media (max-width:480px) {
   .header__bar form {
     display: none
+  }
+}
+@media (max-width:415px) {
+  .row {
+    margin-right: -5px;
+    margin-left: -5px
+  }
+  .header__bar {
+    padding-left: 15px;
+    padding-right: 15px
+  }
+  .menu-trigger {
+    margin-right: 10px
+  }
+  .menu-trigger i {
+    font-size: 15px
+  }
+  .menu-trigger span {
+    font-size: 12px
+  }
+  .header__bar .user {
+    margin-left: 10px
+  }
+  .header__bar .user li i.icon-user {
+    font-size: 15px
+  }
+  .header__bar .user-login li span {
+    margin-left: 5px
+  }
+  .header__bar .user li i.icon-cart {
+    font-size: 15px
+  }
+  .header__bar .user li:nth-child(1) {
+    margin-right: 13px
+  }
+  .header__bar form:not(.subform) {
+    padding-left: 5px;
+    padding-right: 5px;
+    height: 28px
+  }
+  .header__bar form:not(.subform) .icon {
+    font-size: 15px;
+    top: 0
+  }
+  .header__bar {
+    height: 50px
+  }
+  .container,
+  .container-fluid,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container-xl {
+    padding-left: 5px;
+    padding-right: 5px
+  }
+  .category-title {
+    font-size: 22px
+  }
+  .product .price .new {
+    font-size: 1.2em
+  }
+  .change-perpage,
+  .show-more {
+    width: 24px;
+    height: 25px
+  }
+  .page-next .page-link,
+  .page-prev .page-link {
+    width: 24px;
+    height: 20px
+  }
+  .page-prev {
+    margin-right: 3px
+  }
+  .page-next {
+    margin-left: 3px
+  }
+  .categories .categories-link {
+    padding: 20px 10px
+  }
+  .lkTabs .lkTabs-link {
+    -ms-flex-preferred-size: 40%;
+    flex-basis: 40%;
+    margin-right: 1%
+  }
+  .order.product .price .new {
+    font-size: 15px
+  }
+  .form-option .customCheck-item .customCheck-label {
+    padding-right: 5px
+  }
+  #insure {
+    margin-left: 5px;
+    margin-right: 10px;
+    width: auto
+  }
+  .steps .step {
+    padding: 0 5px
+  }
+  .order .order-item .customCheck-item {
+    margin-right: 5px
+  }
+  .cart-list .order-item.disabled .right .order-item-title {
+    width: 60%
+  }
+  .cart-list .order-item.disabled .order-item-price,
+  .cart-list .order-item.disabled.sold .order-item-price {
+    width: 40%
+  }
+  .order.product .price {
+    padding-left: 10px
+  }
+  .order-block-flex .order-block-title {
+    font-size: 12px
+  }
+  .new-message {
+    width: 150px;
+    height: 45px
+  }
+  .messages-list .messages .message-item:last-child .right {
+    padding-top: 35px
+  }
+  .right .date {
+    top: 100%
+  }
+  .chat-message .avatar {
+    width: 15px;
+    height: 15px
+  }
+  .chat-message.to + .to {
+    margin-right: 15px
+  }
+  .chat-message.from + .from {
+    margin-left: 15px
+  }
+  .chat-message {
+    margin-bottom: 10px
+  }
+  .chat-message .right .date {
+    top: calc(100% - 5px)
+  }
+  .chat .chat-window {
+    padding-left: 5px
   }
 }
