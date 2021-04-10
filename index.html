@@ -274,7 +274,7 @@
       
       <aside class="col-xl-3 d-none d-xl-block">
     <ul class="categories">
-      <li><a href="#">Отечественные почтовые марки</a></li>
+      <li class="active"><a href="#">Отечественные почтовые марки</a></li>
       <li><a href="categories.html">Иностранные почтовые марки</a></li>
       <li><a href="#">Каталоги</a></li>
       <li><a href="#">Почтовые отправления</a></li>
@@ -383,19 +383,32 @@
             <label>
                 <span>С года</span>
                 
-                <select id="search-yearfrom">
+                <!-- <select id="search-yearfrom">
                     <option value="1900">1900</option>
                     <option value="1901">1901</option>
                     <option value="1902">1902</option>
-                </select>
+                </select> -->
+
+                <input 
+                    type="text" 
+                    name="yearfrom" 
+                    id="i1" 
+                    class="input"
+                >
             </label>
             <label>
                 <span>До года</span>
-                <select id="search-yearto">
+                <!-- <select id="search-yearto">
                     <option value="1900">1900</option>
                     <option value="1901">1901</option>
                     <option value="1902">1902</option>
-                </select>
+                </select> -->
+                <input 
+                    type="text" 
+                    name="yearto" 
+                    id="i2" 
+                    class="input"
+                >
             </label>
         </div>
 
@@ -409,8 +422,8 @@
     
 </form>
         
-        <div class="main-banner">
-          <img src="./img/banner.jpg" alt="Баннер">
+        <div class="main-banner img-magnifier-container">
+          <img src="./img/banner.jpg" id="baner" alt="Баннер" data-large-img-url="https://proprikol.ru/wp-content/uploads/2020/06/krasivye-kartinki-zvezd-44.jpg" class="withLoupe">
         </div>
 
         <div class="products-slider">
@@ -441,7 +454,7 @@
         <i class="icon icon-favorite"></i>
       </a>
 
-      <img src="./img/mark.jpg" alt="" class="withLoupe galleryImg">
+      <img src="./img/mark.jpg" alt="" data-okimage="./img/banner.jpg" class="withLoupe galleryImg">
 
       <div class="discount">-11%</div>
 
@@ -507,7 +520,7 @@
         <i class="icon icon-favorite"></i>
       </a>
 
-      <img src="./img/mark.jpg" alt="" class="withLoupe galleryImg">
+      <img src="./img/mark.jpg" alt="" data-okimage="./img/banner.jpg" class="withLoupe galleryImg">
 
       <div class="discount">-11%</div>
 
@@ -572,7 +585,7 @@
         <i class="icon icon-favorite"></i>
       </a>
 
-      <img src="./img/mark.jpg" alt="" class="withLoupe galleryImg">
+      <img src="./img/mark.jpg" alt="" data-okimage="./img/banner.jpg" class="withLoupe galleryImg">
 
       <div class="discount">-11%</div>
 
@@ -637,7 +650,7 @@
         <i class="icon icon-favorite"></i>
       </a>
 
-      <img src="./img/mark.jpg" alt="" class="withLoupe galleryImg">
+      <img src="./img/mark.jpg" alt="" data-okimage="./img/banner.jpg" class="withLoupe galleryImg">
 
       <div class="discount">-11%</div>
 
@@ -702,7 +715,7 @@
         <i class="icon icon-favorite"></i>
       </a>
 
-      <img src="./img/mark.jpg" alt="" class="withLoupe galleryImg">
+      <img src="./img/mark.jpg" alt="" data-okimage="./img/banner.jpg" class="withLoupe galleryImg">
 
       <div class="discount">-11%</div>
 
@@ -767,7 +780,7 @@
         <i class="icon icon-favorite"></i>
       </a>
 
-      <img src="./img/mark.jpg" alt="" class="withLoupe galleryImg">
+      <img src="./img/mark.jpg" alt="" data-okimage="./img/banner.jpg" class="withLoupe galleryImg">
 
       <div class="discount">-11%</div>
 
@@ -855,7 +868,7 @@
         <i class="icon icon-favorite"></i>
       </a>
 
-      <img src="./img/mark.jpg" alt="" class="withLoupe galleryImg">
+      <img src="./img/mark.jpg" alt="" data-okimage="./img/banner.jpg" class="withLoupe galleryImg">
 
       <div class="discount">-11%</div>
 
@@ -920,7 +933,7 @@
         <i class="icon icon-favorite"></i>
       </a>
 
-      <img src="./img/mark.jpg" alt="" class="withLoupe galleryImg">
+      <img src="./img/mark.jpg" alt="" data-okimage="./img/banner.jpg" class="withLoupe galleryImg">
 
       <div class="discount">-11%</div>
 
@@ -985,7 +998,7 @@
         <i class="icon icon-favorite"></i>
       </a>
 
-      <img src="./img/mark.jpg" alt="" class="withLoupe galleryImg">
+      <img src="./img/mark.jpg" alt="" data-okimage="./img/banner.jpg" class="withLoupe galleryImg">
 
       <div class="discount">-11%</div>
 
@@ -1050,7 +1063,7 @@
         <i class="icon icon-favorite"></i>
       </a>
 
-      <img src="./img/mark.jpg" alt="" class="withLoupe galleryImg">
+      <img src="./img/mark.jpg" alt="" data-okimage="./img/banner.jpg" class="withLoupe galleryImg">
 
       <div class="discount">-11%</div>
 
@@ -1115,7 +1128,7 @@
         <i class="icon icon-favorite"></i>
       </a>
 
-      <img src="./img/mark.jpg" alt="" class="withLoupe galleryImg">
+      <img src="./img/mark.jpg" alt="" data-okimage="./img/banner.jpg" class="withLoupe galleryImg">
 
       <div class="discount">-11%</div>
 
@@ -1180,7 +1193,7 @@
         <i class="icon icon-favorite"></i>
       </a>
 
-      <img src="./img/mark.jpg" alt="" class="withLoupe galleryImg">
+      <img src="./img/mark.jpg" alt="" data-okimage="./img/banner.jpg" class="withLoupe galleryImg">
 
       <div class="discount">-11%</div>
 
@@ -1717,6 +1730,7 @@
 <div class="overlay"></div>
 
 <script src="js/app.min.js"></script>
+
 </body>
 
 </html>
