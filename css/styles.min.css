@@ -13575,9 +13575,10 @@ main .main-banner img {
   font-weight: 500;
   margin-bottom: 20px;
   background-color: #fff;
-  position: relative
+  position: relative;
+  resize: none
 }
-.input:disabled {
+.input:disabled:not(textarea) {
   opacity: 50%
 }
 .input.custom-select-opener {
