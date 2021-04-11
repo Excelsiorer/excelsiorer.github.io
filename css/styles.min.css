@@ -14896,6 +14896,10 @@ main .main-banner img {
   font-weight: 600;
   margin: 12px 0 20px 0
 }
+.order-form .form-option-2 .input {
+  margin: 0;
+  margin-bottom: 5px
+}
 .order-form .form-option-2 textarea {
   width: 100%;
   height: 59px
