@@ -13531,7 +13531,22 @@ main .main-banner img {
   right: 10px
 }
 .customSelect.custom-select-container.is-open .custom-select-panel {
-  overflow-y: hidden
+  scrollbar-width: thin;
+  scrollbar-color: #afafaf transparent
+}
+.customSelect.custom-select-container.is-open .custom-select-panel::-webkit-scrollbar {
+  width: 5px;
+  height: 5px
+}
+.customSelect.custom-select-container.is-open .custom-select-panel::-webkit-scrollbar-button {
+  display: none
+}
+.customSelect.custom-select-container.is-open .custom-select-panel::-webkit-scrollbar-track {
+  background: 0 0
+}
+.customSelect.custom-select-container.is-open .custom-select-panel::-webkit-scrollbar-thumb {
+  background: #afafaf;
+  border-radius: 5px
 }
 .customSelect .custom-select-panel {
   overflow-x: hidden;
@@ -14878,12 +14893,12 @@ main .main-banner img {
 .order-form .form-option-2 .form-block-title {
   margin-top: 0;
   margin-bottom: 20px;
-  font-weight: 600
-}
-.order-form .form-option-2 .input {
-  width: 100%;
-  height: 59px;
+  font-weight: 600;
   margin: 12px 0 20px 0
+}
+.order-form .form-option-2 textarea {
+  width: 100%;
+  height: 59px
 }
 .order-form .form-option-2 .form-side {
   padding: 0
@@ -15633,12 +15648,15 @@ main .main-banner img {
 .perpage .custom-select-option:hover {
   cursor: pointer
 }
+.galleryImg {
+  cursor: pointer
+}
 .categories {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: nowrap;
-  flex-wrap: nowrap
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap
 }
 .categories .categories-link {
   position: relative;
