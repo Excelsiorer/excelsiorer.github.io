@@ -12830,7 +12830,8 @@ aside ul.short-news .title {
   color: #0e5c83;
   text-transform: uppercase;
   font-size: 16px;
-  margin-bottom: 20px
+  margin-bottom: 20px;
+  margin-top: 20px
 }
 aside ul.short-news li {
   background: #fff;
@@ -13647,7 +13648,8 @@ main .main-banner img {
   background-color: transparent;
   margin-bottom: 0;
   padding-bottom: 0;
-  padding-left: 0
+  padding-left: 0;
+  padding-right: 30px
 }
 .breadcrumb .breadcrumb-item {
   display: block
@@ -15655,12 +15657,56 @@ main .main-banner img {
 .galleryImg {
   cursor: pointer
 }
-.categories {
+.categories__hide {
+  border-radius: 50%;
+  background-color: #0e5c83;
+  color: #fff;
+  border: none;
+  width: 30px;
+  height: 30px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+  position: absolute;
+  right: 15px;
+  top: 0;
+  -webkit-transition: .3s;
+  -o-transition: .3s;
+  transition: .3s
+}
+.categories__hide .icon {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  font-size: 15px
+}
+.categories__hide--clicked {
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg)
+}
+.categories:not(aside.categories) {
   -ms-flex-wrap: wrap;
-  flex-wrap: wrap
+  flex-wrap: wrap;
+  position: relative
+}
+aside .categories {
+  -ms-flex-wrap: nowrap!important;
+  flex-wrap: nowrap!important
+}
+.categories {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex
 }
 .categories .categories-link {
   position: relative;
@@ -16245,14 +16291,13 @@ footer {
   .header__bar form input::placeholder {
     color: #fff
   }
-  .categories {
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap
-  }
   .categories .categories-link {
     border: none;
     margin-bottom: 15px;
-    width: 50%
+    width: 50%;
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%
   }
   .categories .categories-link:nth-child(odd) {
     border-right: 1px solid #8b8b8b
