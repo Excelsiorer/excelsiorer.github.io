@@ -12142,6 +12142,20 @@ button.swiper-pagination-bullet {
 .icon-youtube:before {
   content: "\E020"
 }
+.wrapper {
+  position: relative
+}
+a {
+  color: #0e5c83
+}
+.cut-text {
+  -o-text-overflow: clip;
+  text-overflow: clip;
+  text-overflow-overflow: hidden;
+  text-overflow-display: -webkit-box;
+  text-overflow--webkit-line-clamp: 3;
+  text-overflow--webkit-box-orient: vertical
+}
 .icon-ruble {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -12575,7 +12589,6 @@ textarea:focus {
   color: #0e5c83
 }
 .header .currency .wrapper {
-  position: relative;
   width: 40px;
   margin-left: 15px;
   margin-right: 15px
@@ -12873,7 +12886,8 @@ main .main-banner img {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  margin-bottom: 20px
+  margin-bottom: 20px;
+  position: relative
 }
 .posts-slider .wrapper .navigation,
 .products-slider .wrapper .navigation {
@@ -12991,7 +13005,7 @@ main .main-banner img {
   justify-content: flex-end;
   overflow: hidden;
   border-radius: 5px;
-  border: 1px solid #f5f6f6;
+  border: 2px solid #f5f6f6;
   padding-bottom: 10px;
   height: 100%
 }
@@ -13083,16 +13097,19 @@ main .main-banner img {
   white-space: nowrap
 }
 .product .title {
+  -o-text-overflow: clip;
+  text-overflow: clip;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
   padding-left: 10px;
   padding-right: 10px;
   font-size: 14px;
   padding-top: 15px;
   color: #004666;
   font-family: Montserrat-SemiBold,sans-serif;
-  font-weight: 600;
-  -o-text-overflow: clip;
-  text-overflow: clip;
-  overflow: hidden
+  font-weight: 600
 }
 .product .params {
   display: -webkit-box;
@@ -13867,13 +13884,15 @@ main .main-banner img {
   padding: 0;
   font-size: 24px;
   line-height: normal;
-  margin-bottom: 7px
+  margin-bottom: 7px;
+  display: block
 }
 .single-product.product .product-description {
   background-color: transparent;
   border: .5px solid #10547d;
   border-radius: 5px;
-  padding: 10px 15px
+  padding: 10px 15px;
+  margin-top: 20px
 }
 .single-product.product .product-description ul {
   padding-top: 40px
@@ -13919,6 +13938,9 @@ main .main-banner img {
 }
 .single-product.product .params {
   padding: 0
+}
+.single-product.product .params + .product-description {
+  margin-top: 0
 }
 .single-product.product .params li {
   margin-bottom: 15px;
@@ -14285,7 +14307,16 @@ main .main-banner img {
   width: 19px;
   height: 19px;
   text-align: center;
-  font-size: 13px
+  font-size: 11px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center
 }
 .success-order .success-order-msg {
   margin-top: 40px;
@@ -14411,7 +14442,7 @@ main .main-banner img {
   width: 10px;
   height: 10px;
   top: auto;
-  left: 12px
+  left: 3px
 }
 .messages-list .messages .message-item .customCheck-item {
   margin-bottom: 0
@@ -15677,8 +15708,8 @@ main .main-banner img {
   -ms-transform: rotate(-90deg);
   transform: rotate(-90deg);
   position: absolute;
-  right: 15px;
-  top: 0;
+  right: 0;
+  top: -4px;
   -webkit-transition: .3s;
   -o-transition: .3s;
   transition: .3s
@@ -15698,6 +15729,12 @@ main .main-banner img {
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   position: relative
+}
+.categories .categories-link {
+  margin-bottom: 10px
+}
+.categories .categories-link:nth-child(4n) {
+  border-right: none
 }
 aside .categories {
   -ms-flex-wrap: nowrap!important;
@@ -15748,10 +15785,11 @@ aside .categories {
 }
 .categories .categories-link .badge {
   position: absolute;
-  font-size: 16px;
+  font-size: 13px;
   font-weight: 600;
   top: 2px;
-  right: 20px
+  right: 2px;
+  opacity: .9
 }
 .categories li.active {
   width: calc(100% + 30px);
@@ -15906,7 +15944,13 @@ input[type=number] {
   padding-left: 10px;
   padding-right: 10px;
   display: block;
-  font-weight: 600
+  font-weight: 600;
+  -o-text-overflow: clip;
+  text-overflow: clip;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical
 }
 .post .content {
   font-size: 10px;
@@ -16147,6 +16191,23 @@ footer {
   body {
     font-size: 16px
   }
+  .menu-trigger {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-right: 10px;
+    color: #fff
+  }
+  .menu-trigger span {
+    display: none
+  }
+  .menu-trigger i {
+    font-size: 18px;
+    margin-right: 10px
+  }
   .header .logo-wrapper {
     margin-bottom: 10px;
     padding-top: 0
@@ -16189,9 +16250,11 @@ footer {
   }
 }
 @media (max-width:992px) {
-  .cart-list .customCheck-item .customCheck-input:checked + .customCheck-label:after,
-  .cart-list .customCheck-item .customCheck-input:not(:checked) + .customCheck-label:after {
-    top: -9px
+  .menu-trigger {
+    margin-right: 30px
+  }
+  .menu-trigger span {
+    display: block
   }
   body {
     font-size: 16px
@@ -16201,20 +16264,6 @@ footer {
   }
   .header .logo-wrapper {
     margin-bottom: 30px
-  }
-  .menu-trigger {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    margin-right: 30px;
-    color: #fff
-  }
-  .menu-trigger i {
-    font-size: 18px;
-    margin-right: 10px
   }
   .header .navigation,
   .header__bar .extended-search,
@@ -16780,6 +16829,13 @@ footer {
     display: none
   }
 }
+@media (max-width:991px) {
+  .container,
+  .container-md,
+  .container-sm {
+    max-width: 900px
+  }
+}
 @media (max-width:768px) {
   .chat-message {
     margin-bottom: 20px
@@ -16960,13 +17016,16 @@ footer {
   }
 }
 @media (max-width:415px) {
+  .mobile-menu ul li a {
+    font-size: 15px
+  }
   .row {
     margin-right: -5px;
     margin-left: -5px
   }
   .header__bar {
-    padding-left: 15px;
-    padding-right: 15px
+    padding-left: 10px;
+    padding-right: 10px
   }
   .menu-trigger {
     margin-right: 10px
@@ -16992,6 +17051,9 @@ footer {
   .header__bar .user li:nth-child(1) {
     margin-right: 13px
   }
+  .header__bar .user-login li:nth-child(1) {
+    margin-right: 0
+  }
   .header__bar form:not(.subform) {
     padding-left: 5px;
     padding-right: 5px;
@@ -17014,7 +17076,8 @@ footer {
     padding-right: 5px
   }
   .category-title {
-    font-size: 22px
+    font-size: 22px;
+    padding-left: 5px
   }
   .product .price .new {
     font-size: 1.2em
@@ -17036,7 +17099,30 @@ footer {
     margin-left: 3px
   }
   .categories .categories-link {
-    padding: 20px 10px
+    padding: 20px 10px;
+    font-size: 13px
+  }
+  .year-link {
+    font-size: 12px
+  }
+  .lkTabs {
+    margin-left: -10px;
+    margin-right: -10px
+  }
+  .messages-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between
+  }
+  .delete-message {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 40%;
+    flex: 0 0 40%
   }
   .lkTabs .lkTabs-link {
     -ms-flex-preferred-size: 40%;
@@ -17075,7 +17161,10 @@ footer {
   }
   .new-message {
     width: 150px;
-    height: 45px
+    height: 45px;
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 40%;
+    flex: 0 0 40%
   }
   .messages-list .messages .message-item:last-child .right {
     padding-top: 35px
