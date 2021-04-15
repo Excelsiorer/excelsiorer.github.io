@@ -15719,7 +15719,8 @@ main .main-banner img {
   position: relative
 }
 .categories .categories-link {
-  margin-bottom: 10px
+  margin-bottom: 10px;
+  word-break: keep-all
 }
 .categories .categories-link:nth-child(4n) {
   border-right: none
@@ -15752,7 +15753,7 @@ aside .categories {
   border-right: 1px solid #8b8b8b;
   font-size: 16px;
   font-weight: 600;
-  word-break: break-all;
+  word-break: break-word;
   text-align: center;
   -webkit-transition: .3s;
   -o-transition: .3s;
