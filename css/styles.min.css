@@ -13947,7 +13947,8 @@ main .main-banner img {
   margin-bottom: 0
 }
 .modal-dialog {
-  max-width: 50%
+  max-width: 50%;
+  width: 50%
 }
 .modal-dialog .single-product {
   margin-top: 0
@@ -16174,9 +16175,49 @@ footer {
 .product .product-left .title {
   display: none
 }
+.notification--hidden {
+  opacity: 0
+}
+.is-loading {
+  pointer-events: none;
+  position: relative;
+  background-color: rgba(0,0,0,.1)!important
+}
+.is-loading::after {
+  content: "";
+  background-color: rgba(255,255,255,.7);
+  width: 100%;
+  height: 100%;
+  z-index: 3;
+  position: absolute;
+  right: 0;
+  top: 0
+}
+.is-loading:before {
+  content: "";
+  position: absolute;
+  top: auto;
+  right: auto;
+  width: 20px;
+  height: 20px;
+  vertical-align: text-bottom;
+  border: .25em solid #0e5c83;
+  border-right-color: transparent;
+  border-radius: 50%;
+  -webkit-animation: .75s linear infinite spinner-border;
+  animation: .75s linear infinite spinner-border;
+  z-index: 4
+}
+.is-loading.is-loading-big:before {
+  top: 50%;
+  right: 50%;
+  width: 30px;
+  height: 30px
+}
 @media (max-width:1600px) {
   .modal-dialog {
-    max-width: 70%
+    max-width: 70%;
+    width: 70%
   }
 }
 @media (max-width:1260px) {
@@ -16242,6 +16283,12 @@ footer {
   }
 }
 @media (max-width:992px) {
+  .modal-product {
+    display: none!important
+  }
+  .fast-view {
+    display: none!important
+  }
   .product .product-left .title {
     display: block;
     text-align: center
@@ -16991,7 +17038,8 @@ footer {
     width: 80%
   }
   .modal-gift .modal-dialog {
-    max-width: 90%
+    max-width: 90%;
+    width: 90%
   }
   .modal-gift .modal-body {
     padding: 0 10px 10px 10px
@@ -17015,6 +17063,15 @@ footer {
   }
 }
 @media (max-width:415px) {
+  .cart-list .order-item.disabled.sold .order-item-price .price .price-wrapper {
+    margin: 0;
+    padding-right: 30px;
+    padding-left: 5px
+  }
+  .cart-list .order-item.disabled:not(.sold) .order-item-price .price .price-wrapper {
+    padding-left: 5px;
+    padding-right: 15px
+  }
   .mobile-menu ul li a {
     font-size: 15px
   }
@@ -17140,7 +17197,9 @@ footer {
     width: auto
   }
   .steps .step {
-    padding: 0 5px
+    padding: 0 5px;
+    -ms-flex-preferred-size: calc(50% - 20px);
+    flex-basis: calc(50% - 20px)
   }
   .order .order-item .customCheck-item {
     margin-right: 5px
