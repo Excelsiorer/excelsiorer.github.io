@@ -14467,11 +14467,13 @@ main .main-banner img {
   padding: 15px;
   border-radius: 5px;
   display: inline-block;
-  margin-bottom: 5px
+  margin-bottom: 5px;
+  word-break: break-word
 }
 .chat-message .date {
   font-size: 10px;
-  font-weight: 400
+  font-weight: 400;
+  width: 100%
 }
 .chat-message .avatar {
   width: 35px;
@@ -14499,7 +14501,8 @@ main .main-banner img {
   text-align: left
 }
 .chat-message.from .right {
-  margin-left: 15px
+  margin-left: 15px;
+  width: 100%
 }
 .chat-message.to {
   -webkit-box-pack: end;
@@ -14516,7 +14519,15 @@ main .main-banner img {
   margin-top: 30px
 }
 .chat-message.to .left {
-  margin-right: 15px
+  margin-right: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end
 }
 .chat-message.to .message {
   background-color: rgba(242,97,1,.3);
