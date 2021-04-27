@@ -14380,6 +14380,9 @@ main .main-banner img {
 .messages-list {
   margin-bottom: 25px
 }
+.messages-list .messages {
+  width: 100%
+}
 .messages-list .messages .message-item {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -17338,7 +17341,7 @@ footer {
     margin-left: 15px
   }
   .chat-message {
-    margin-bottom: 10px
+    margin-bottom: 15px
   }
   .chat-message .right .date {
     top: calc(100% - 5px)
