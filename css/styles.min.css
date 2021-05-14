@@ -15586,7 +15586,9 @@ main .main-banner img {
   display: flex;
   -webkit-box-align: center;
   -ms-flex-align: center;
-  align-items: center
+  align-items: center;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap
 }
 .page-item {
   width: 25px;
