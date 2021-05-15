@@ -15587,8 +15587,7 @@ main .main-banner img {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap
+  margin-left: 10px
 }
 .page-item {
   width: 25px;
@@ -16255,6 +16254,9 @@ footer {
 .modal-error .modal-body .error-msg {
   color: red;
   font-size: 25px
+}
+.customSelect > .customSelect {
+  display: none
 }
 @media (max-width:1600px) {
   .modal-dialog {
