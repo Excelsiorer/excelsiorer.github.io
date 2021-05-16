@@ -15634,8 +15634,8 @@ main .main-banner img {
 .pagination-input.goto {
   width: 100px;
   display: none;
-  margin-left: 20px;
-  margin-right: 10px
+  margin-left: 5px;
+  margin-right: 5px
 }
 .perpage.custom-select-opener {
   height: 35px;
@@ -15872,6 +15872,10 @@ input[type=number] {
 }
 .pagination {
   margin-top: 40px
+}
+.pagination .pagination-section {
+  margin-top: 5px;
+  margin-bottom: 5px
 }
 .pagination .pagination-section:first-child {
   margin-right: 10px
